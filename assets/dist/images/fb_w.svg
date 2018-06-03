@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10.736px"
+	 height="22.997px" viewBox="0 0 10.736 22.997" enable-background="new 0 0 10.736 22.997" xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  width="23.003" height="22.997" x="947.905" y="529.002" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g id="Icons">
+	<path id="Twitter__x28_alt_x29__2_" display="none" fill="#FFFFFF" d="M14.163,10.521c1.292-0.105,2.165-0.715,2.512-1.493
+		c-0.473,0.273-1.918,0.6-2.717,0.295c-0.037-0.169-0.089-0.379-0.126-0.525c-0.608-2.229-2.686-4.036-4.882-3.806
+		c0.179-0.073,0.357-0.157,0.546-0.199c0.242-0.105,1.65-0.337,1.419-0.82C10.726,3.521,9.013,4.31,8.687,4.404
+		c0.431-0.169,1.14-0.452,1.214-0.936C9.244,3.573,8.598,3.879,8.104,4.33c0.173-0.199,0.313-0.431,0.342-0.683
+		c-1.75,1.114-2.775,3.374-3.6,5.549c-0.647-0.63-1.222-1.134-1.74-1.386C1.65,7.021-0.073,6.212-2.801,5.192
+		C-2.88,6.106-2.359,7.294-0.835,8.083C-1.167,8.03-1.761,8.136-2.244,8.262c0.189,1.04,0.836,1.881,2.575,2.28
+		c-0.799,0.053-1.203,0.231-1.569,0.642c0.352,0.704,1.238,1.545,2.825,1.365c-1.766,0.758-0.725,2.177,0.722,1.977
+		c-2.459,2.533-6.313,2.334-8.535,0.23c5.786,7.884,18.373,4.668,20.249-2.942c1.409,0.021,2.231-0.483,2.754-1.04
+		C15.96,10.921,14.783,10.773,14.163,10.521z"/>
+	<path id="Facebook_2_" fill="#FFFFFF" d="M2.317,4.456c0,0.589,0,3.175,0,3.175H0v3.857h2.317v11.509h4.771V11.488h3.195
+		c0,0,0.305-1.86,0.441-3.889c-0.405,0-3.626,0-3.626,0s0-2.25,0-2.628c0-0.41,0.529-0.946,1.041-0.946c0.504,0,1.598,0,2.596,0
+		c0-0.525,0-2.354,0-4.025C9.396,0,7.873,0,7.2,0C2.207,0,2.317,3.879,2.317,4.456z"/>
+</g>
+</svg>

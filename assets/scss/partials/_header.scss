@@ -1,0 +1,119 @@
+header {
+	position: fixed;
+	left: 0; right: 0;
+	top: 0;
+	z-index: 9999;
+
+
+	.logo {
+		display: inline-block;
+		text-decoration: none;
+		height: 50px;
+		width: 50px;
+		position: relative;
+		margin-left: 90px;
+		margin-top: 90px;
+
+		.logo-default-state {
+			position: absolute;
+			left: 0; top: 0; bottom: 0;
+			width: 50px;
+			z-index: 1;
+			transition: width 200ms;
+		}
+
+		.logo-hover-state {
+			position: absolute;
+			left: 0; top: 0; bottom: 0;
+			width: 0px;
+			z-index: 2;
+			transition: width 300ms;
+		}
+
+		&:hover {
+			.logo-default-state {
+				width: 0px;
+				transition: width 200ms;
+			}
+
+			.logo-hover-state {
+				width: 120px;
+				transition: width 200ms;
+			}
+		}
+	}
+
+	.menu-toggler {
+		float: right;
+		margin-right: 93px;
+		margin-top: 103px;
+		height: 23px;
+		width: 36px;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		position: relative;
+
+		.menu-toggler__default-state, .menu-toggler__hover-state {
+			position: absolute;
+			left: 0; top: 0; bottom: 0;
+		}
+
+		.menu-toggler__default-state {
+			width: 100%;
+		}
+
+		.menu-toggler__hover-state {
+			width: 0%;
+			transition: width 200ms;
+		}
+
+		&:hover {
+			.menu-toggler__hover-state {
+				width: 100%;
+			}
+		}
+	}
+
+	&.white-objects{
+
+		.logo {
+			.logo-default-state {
+				background: url('../images/logo_w.svg') no-repeat 0 0;
+			}
+			.logo-hover-state {
+				background: url('../images/logo_mause_w.svg') no-repeat 0 0;
+			}
+		}
+
+		.menu-toggler {
+			.menu-toggler__default-state {
+				background: url('../images/menu_w.svg') no-repeat 0 0;
+			}
+			.menu-toggler__hover-state {
+				background: url('../images/menu_mause_w.svg') no-repeat 0 0;
+			}
+		}
+	}
+
+	&.black-objects{
+
+		.logo {
+			.logo-default-state {
+				background: url('../images/logo_b.svg') no-repeat 0 0;
+			}
+			.logo-hover-state {
+				background: url('../images/logo_mause_b.svg') no-repeat 0 0;
+			}
+		}
+
+		.menu-toggler {
+			.menu-toggler__default-state {
+				background: url('../images/menu_b.svg') no-repeat 0 0;
+			}
+			.menu-toggler__hover-state {
+				background: url('../images/menu_mause_b.svg') no-repeat 0 0;
+			}
+		}
+	}
+}
