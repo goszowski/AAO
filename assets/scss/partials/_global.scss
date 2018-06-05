@@ -2,3 +2,21 @@ html, body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 18px;
 }
+
+a {
+	text-decoration: none;
+	color: #8d8d8d;
+	&:hover, &.active {
+		color: rgba(0,0,0, 1);
+	}
+}
+
+.btn-transp {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	outline: none;
+	&:hover, &:focus {
+		background-color: transparent;
+	}
+}

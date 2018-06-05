@@ -14,10 +14,10 @@
 	<link rel="stylesheet" href="/assets/dist/css/style.min.css">
 </head>
 <body>
-	@yield('app')
+	<?php echo $__env->yieldContent('app'); ?>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	@yield('page-scripts')
+	<?php echo $__env->yieldContent('page-scripts'); ?>
 </body>
 </html>

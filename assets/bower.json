@@ -1,0 +1,16 @@
+{
+  "name": "Start.template",
+  "description": "OptimizedHTML - Start HTML Template",
+  "main": "index.php",
+  "authors": [
+    "BodyaH",
+    "Runsite LLC"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+  }
+}

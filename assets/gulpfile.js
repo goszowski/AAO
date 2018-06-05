@@ -15,6 +15,7 @@ var gulp           = require('gulp'),
 		rsync          = require('gulp-rsync'),
 		purify         = require('gulp-purifycss');
 
+var templatesPattern = '../views/**/*.php';
 
 gulp.task('js', function() {
 	return gulp.src([
@@ -24,20 +25,31 @@ gulp.task('js', function() {
 	.pipe(gulp.dest('dist/js/'));
 });
 
+gulp.task('browser-sync', function() {
+	browserSync({
+		proxy: 'aao',
+		notify: false,
+		// tunnel: true,
+		// tunnel: "projectmane", //Demonstration page: http://projectmane.localtunnel.me
+	});
+});
+
 gulp.task('sass', function() {
 	return gulp.src('scss/*.scss')
 	.pipe(sass({outputStyle: 'expand'}).on("error", notify.onError()))
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer(['last 15 versions']))
 	//.pipe(cleanCSS()) //розкоментувати для мініфікації
-	.pipe(gulp.dest('dist/css'));
+	.pipe(gulp.dest('dist/css'))
+	.pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('watch', ['sass', 'js'], function() {
+gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
 	gulp.watch(['scss/*.scss', 'scss/**/*.scss'], function(event, cb) {
-		setTimeout(function(){gulp.start('sass');},0);
+		setTimeout(function(){gulp.start('sass');},1000);
 	});
 	gulp.watch(['scripts/*.js'], ['js']);
+	gulp.watch(templatesPattern, browserSync.reload);
 });
 
 gulp.task('default', ['watch']);

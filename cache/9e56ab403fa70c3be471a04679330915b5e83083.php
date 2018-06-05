@@ -1,8 +1,6 @@
-@extends('_layouts.resources')
+<?php $__env->startSection('app'); ?>
 
-@section('app')
-
-<header class="@yield('header-class', 'black-objects')">
+<header class="<?php echo $__env->yieldContent('header-class', 'black-objects'); ?>">
 	<a href="/" class="logo">
 		<span class="logo-default-state"></span>
 		<span class="logo-hover-state"></span>
@@ -74,10 +72,12 @@
 	</div>
 </header>
 
-{{-- Page content --}}
-@yield('content')
 
-{{-- Footer --}}
+<?php echo $__env->yieldContent('content'); ?>
 
-{{-- / Footer --}}
-@endsection
+
+
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('_layouts.resources', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
