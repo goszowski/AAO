@@ -515,3 +515,50 @@ header {
         display: block; }
       .home-slider .owl-dots .owl-dot:active, .home-slider .owl-dots .owl-dot:focus {
         outline: none; }
+
+#navigation {
+  position: fixed;
+  left: -100vw;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  background: #fff; }
+  #navigation nav {
+    position: absolute;
+    left: 170px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%); }
+    #navigation nav ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+      #navigation nav ul li {
+        padding: 0;
+        margin: 0; }
+        #navigation nav ul li a {
+          position: relative;
+          display: block;
+          font-size: 48px;
+          font-weight: bold;
+          color: rgba(0, 0, 0, 0.5);
+          text-decoration: none;
+          -webkit-transition: color 200ms;
+          -o-transition: color 200ms;
+          transition: color 200ms;
+          padding-right: 70px; }
+          #navigation nav ul li a:after {
+            content: '';
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+            opacity: 0;
+            -webkit-transition: opacity 200ms;
+            -o-transition: opacity 200ms;
+            transition: opacity 200ms;
+            background: url(../images/arrow_b.svg) no-repeat right center; }
+          #navigation nav ul li a:hover, #navigation nav ul li a.active {
+            color: black; }
+            #navigation nav ul li a:hover:after, #navigation nav ul li a.active:after {
+              opacity: 1; }
