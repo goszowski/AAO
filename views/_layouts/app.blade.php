@@ -75,8 +75,9 @@
 </header>
 
 {{-- Page content --}}
+<main>
 @yield('content')
-
+</main>
 {{-- Footer --}}
 
 {{-- / Footer --}}

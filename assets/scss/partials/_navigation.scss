@@ -5,6 +5,7 @@
 	width: 100vw;
 	background: #fff;
 	z-index: 2;
+	transition: left 0.5s ease-in;
 
 
 	.main-nav {
@@ -182,7 +183,7 @@
 	}
 
 	@media(max-width: 767px) {
-		overflow-x: scroll;
+		overflow-y: scroll;
 		.main-nav {
 			display: block;
 			position: static;
@@ -248,4 +249,15 @@
 
 }
 
-	
+main {
+	transition: transform .7s;
+}
+
+.navigation-is-open {
+	overflow: hidden;
+	main {
+		overflow: hidden;
+		backface-visibility: hidden;
+		transform: translateX(100%);
+	}
+}
