@@ -320,6 +320,9 @@ a {
   .btn-transp:hover, .btn-transp:focus {
     background-color: transparent; }
 
+body, html {
+  overflow-x: hidden; }
+
 header {
   position: fixed;
   left: 0;
@@ -544,7 +547,7 @@ header {
   -webkit-transition: width .7s ease-in, left .7s ease-in;
   -o-transition: width .7s ease-in, left .7s ease-in;
   transition: width .7s ease-in, left .7s ease-in;
-  overflow: hidden; }
+  overflow-x: hidden; }
   #navigation .navigation-inner {
     position: absolute;
     left: -500px;
@@ -751,17 +754,15 @@ main {
   transition: transform .7s ease-out;
   transition: transform .7s ease-out, -webkit-transform .7s ease-out; }
 
-.navigation-is-open {
-  overflow: hidden; }
-  .navigation-is-open main {
-    overflow: hidden;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    -webkit-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: -webkit-transform .8s ease-in;
-    transition: -webkit-transform .8s ease-in;
-    -o-transition: transform .8s ease-in;
-    transition: transform .8s ease-in;
-    transition: transform .8s ease-in, -webkit-transform .8s ease-in; }
+.navigation-is-open main {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform .8s ease-in;
+  transition: -webkit-transform .8s ease-in;
+  -o-transition: transform .8s ease-in;
+  transition: transform .8s ease-in;
+  transition: transform .8s ease-in, -webkit-transform .8s ease-in; }

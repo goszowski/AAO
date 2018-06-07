@@ -8,7 +8,7 @@
 	background: #fff;
 	z-index: 2;
 	transition: width .7s ease-in, left .7s ease-in;
-	overflow: hidden;
+	overflow-x: hidden;
 
 	.navigation-inner {
 		position: absolute;
@@ -275,7 +275,6 @@ main {
 }
 
 .navigation-is-open {
-	overflow: hidden;
 	main {
 		overflow: hidden;
 		backface-visibility: hidden;
