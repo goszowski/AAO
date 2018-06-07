@@ -16,6 +16,9 @@ var gulp           = require('gulp'),
 		purify         = require('gulp-purifycss');
 
 var templatesPattern = '../views/**/*.php';
+var sourceBootstrap = '../assets/vendor/bootstrap-sass-grid/sass/bootstrap-sass-grid.scss';
+var folderBootstrap = '../assets/vendor/bootstrap-sass-grid/css/';
+
 
 gulp.task('js', function() {
 	return gulp.src([
@@ -23,6 +26,15 @@ gulp.task('js', function() {
 		])
 	.pipe(concat('scripts.min.js'))
 	.pipe(gulp.dest('dist/js/'));
+});
+
+gulp.task('bootstrap', function () {
+	return gulp.src(sourceBootstrap)
+	.pipe(rename({suffix: '.min', prefix : ''}))
+	.pipe(sass({outputStyle: 'expand'}).on('error', sass.logError))
+	.pipe(cleanCSS()) //розкоментувати для мініфікації
+	.pipe(gulp.dest(folderBootstrap))
+	.pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('browser-sync', function() {
@@ -47,6 +59,9 @@ gulp.task('sass', function() {
 gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
 	gulp.watch(['scss/*.scss', 'scss/**/*.scss'], function(event, cb) {
 		setTimeout(function(){gulp.start('sass');},1000);
+	});
+	gulp.watch('../assets/vendor/bootstrap-sass-grid/sass/**/*.scss', function(event, cb) {
+		setTimeout(function(){gulp.start('bootstrap');},1000);
 	});
 	gulp.watch(['scripts/*.js'], ['js']);
 	gulp.watch(templatesPattern, browserSync.reload);

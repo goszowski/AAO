@@ -272,6 +272,11 @@
 
 main {
 	transition: transform .7s ease-out;
+	overflow: hidden;
+}
+
+.ovf-hidd {
+	overflow: hidden;
 }
 
 .navigation-is-open {
