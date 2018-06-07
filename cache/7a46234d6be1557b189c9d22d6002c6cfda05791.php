@@ -22,13 +22,13 @@
 	<script>
 		$('.menu-toggler').on('click', function(){
 			console.log('f');
-			$('#navigation').css('left','0');
+			$('#navigation').addClass('open');
 			$('body').addClass('navigation-is-open');
 		});
 
 		$('.menu-close').on('click', function(){
 			console.log('f');
-			$('#navigation').css('left','-100vw');
+			$('#navigation').removeClass('open');
 			$('body').removeClass('navigation-is-open');
 		});
 	</script>

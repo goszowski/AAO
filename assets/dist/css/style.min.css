@@ -535,22 +535,39 @@ header {
 
 #navigation {
   position: fixed;
-  left: -100vw;
   top: 0;
   bottom: 0;
+  left: -100vw;
   width: 100vw;
   background: #fff;
   z-index: 2;
-  -webkit-transition: left 0.5s ease-in;
-  -o-transition: left 0.5s ease-in;
-  transition: left 0.5s ease-in; }
+  -webkit-transition: width .7s ease-in, left .7s ease-in;
+  -o-transition: width .7s ease-in, left .7s ease-in;
+  transition: width .7s ease-in, left .7s ease-in;
+  overflow: hidden; }
+  #navigation .navigation-inner {
+    position: absolute;
+    left: -500px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    -webkit-transition: left .7s ease-in;
+    -o-transition: left .7s ease-in;
+    transition: left .7s ease-in; }
+  #navigation.open {
+    left: 0vw; }
+    #navigation.open .navigation-inner {
+      left: 0px; }
   #navigation .main-nav {
     position: absolute;
     left: 170px;
     top: 50%;
     -webkit-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
-            transform: translate(0, -50%); }
+            transform: translate(0, -50%);
+    -webkit-transition: left 1.5s;
+    -o-transition: left 1.5s;
+    transition: left 1.5s; }
     #navigation .main-nav ul {
       margin: 0;
       padding: 0;
@@ -728,11 +745,11 @@ header {
           margin-left: 5px; } }
 
 main {
-  -webkit-transition: -webkit-transform .7s;
-  transition: -webkit-transform .7s;
-  -o-transition: transform .7s;
-  transition: transform .7s;
-  transition: transform .7s, -webkit-transform .7s; }
+  -webkit-transition: -webkit-transform .7s ease-out;
+  transition: -webkit-transform .7s ease-out;
+  -o-transition: transform .7s ease-out;
+  transition: transform .7s ease-out;
+  transition: transform .7s ease-out, -webkit-transform .7s ease-out; }
 
 .navigation-is-open {
   overflow: hidden; }
@@ -742,4 +759,9 @@ main {
             backface-visibility: hidden;
     -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
-            transform: translateX(100%); }
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform .8s ease-in;
+    transition: -webkit-transform .8s ease-in;
+    -o-transition: transform .8s ease-in;
+    transition: transform .8s ease-in;
+    transition: transform .8s ease-in, -webkit-transform .8s ease-in; }

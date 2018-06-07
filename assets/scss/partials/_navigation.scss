@@ -1,11 +1,31 @@
 #navigation {
 	position: fixed;
-	left: -100vw;
 	top: 0; bottom: 0;
+
+	left: -100vw;
 	width: 100vw;
+
 	background: #fff;
 	z-index: 2;
-	transition: left 0.5s ease-in;
+	transition: width .7s ease-in, left .7s ease-in;
+	overflow: hidden;
+
+	.navigation-inner {
+		position: absolute;
+		left: -500px;
+		top: 0px;
+		width: 100vw;
+		height: 100vh;
+		transition: left .7s ease-in;
+	}
+
+	&.open {
+		left: 0vw;
+
+		.navigation-inner {
+			left: 0px;
+		}
+	}
 
 
 	.main-nav {
@@ -13,6 +33,7 @@
 		left: 170px;
 		top: 50%;
 		transform: translate(0, -50%);
+		transition: left 1.5s;
 		ul {
 			margin: 0;
 			padding: 0;
@@ -250,7 +271,7 @@
 }
 
 main {
-	transition: transform .7s;
+	transition: transform .7s ease-out;
 }
 
 .navigation-is-open {
@@ -259,5 +280,6 @@ main {
 		overflow: hidden;
 		backface-visibility: hidden;
 		transform: translateX(100%);
+		transition: transform .8s ease-in;
 	}
 }
