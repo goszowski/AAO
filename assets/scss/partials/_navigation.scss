@@ -280,6 +280,31 @@ main {
 }
 
 .navigation-is-open {
+	header .logo {
+		margin-top: 90px;
+
+		@media(max-width: 992px) {
+			margin-top: 25px;
+		}
+
+		@media(max-width: 576px){ 
+			margin-top: 15px;
+		}
+	
+	}
+	
+	header .menu-toggler {
+		margin-top: 103px;
+
+		@media(max-width: 992px) {
+			margin-top: 40px;
+		}
+
+		@media(max-width: 576px){ 
+			margin-top: 25px;
+		}
+	}
+
 	main {
 		overflow: hidden;
 		backface-visibility: hidden;
