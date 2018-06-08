@@ -142,6 +142,14 @@
 
 		
 	});
+
+	$(document).ready(function(){
+		$('#up').click(function() {
+			$('html, body').animate({scrollTop: 0},700);
+			return false;
+		})
+	});
+
 </script>
 <?php $__env->stopSection(); ?>
 

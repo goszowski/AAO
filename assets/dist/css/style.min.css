@@ -627,6 +627,36 @@ footer {
           transition: color 0.2s; }
         footer .contact-info_bottom span a:hover, footer .contact-info_bottom span a:focus {
           color: #fff; }
+  footer .footer-bottom-line {
+    border-top: 1px solid #747473;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    footer .footer-bottom-line ul {
+      font-size: 0;
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+      footer .footer-bottom-line ul li {
+        padding: 0;
+        margin: 0;
+        display: inline-block; }
+        footer .footer-bottom-line ul li a {
+          text-transform: uppercase;
+          letter-spacing: 3.6px;
+          color: #747473;
+          font-size: 12px;
+          text-decoration: none;
+          margin-right: 30px;
+          -webkit-transition: color 0.2s;
+          -o-transition: color 0.2s;
+          transition: color 0.2s;
+          line-height: 20px; }
+          footer .footer-bottom-line ul li a:hover, footer .footer-bottom-line ul li a:active {
+            color: white; }
+  footer .footer-bottom-line .footer-nav_right li a {
+    font-size: 16px; }
+  footer .footer-nav_right li:last-child a {
+    margin-right: 0; }
 
 .transform-btn {
   -webkit-transform: rotate(-90deg);
@@ -652,6 +682,40 @@ footer {
     margin-top: 55px; }
     .to-top:hover img {
       margin-left: 10px; }
+
+@media (max-width: 1190px) {
+  .footer-top-line .inner-block {
+    width: 50%;
+    float: left; } }
+
+@media (max-width: 1190px) {
+  .footer-bottom-line .inner-block {
+    width: 50%;
+    float: left; } }
+
+@media (max-width: 990px) {
+  .footer-bottom-line .inner-block {
+    float: none;
+    width: 100%;
+    text-align: center; } }
+
+@media (max-width: 990px) {
+  .footer-bottom-line .footer-nav_right {
+    margin-top: 20px; } }
+
+@media (max-width: 990px) {
+  .footer-bottom-line .footer-nav_left li a {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px; } }
+
+@media (max-width: 1190px) {
+  footer.pl-172 {
+    padding-left: 40px; } }
+
+@media (max-width: 1190px) {
+  footer.pr-172 {
+    padding-right: 40px; } }
 
 header {
   position: fixed;

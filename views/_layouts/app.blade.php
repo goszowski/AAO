@@ -92,18 +92,19 @@
 					<p>38-200 Pilzno</p>
 				</div>
 				<div class="contact-info_bottom">
-					<p>T<span>+48 500 200 300</span></p>
+					<p>T<span>+48&nbsp;500&nbsp;200&nbsp;300</span></p>
 					<p>E<span><a href="mailto:biuro@STUDIO.pl">biuro@STUDIO.pl</a></span></p>
 				</div>
 			</div>
 		</div>
 		<div class="inner-block text-right">
-			<span class="has-icon-btn text-uppercase transform-btn white-btn fz10 to-top">TO TOP<img src="assets/dist/images/arrow_w.svg" alt="d"></span>
+			<span id="up" class="has-icon-btn text-uppercase transform-btn white-btn fz10 to-top">TO TOP<img src="assets/dist/images/arrow_w.svg" alt="d"></span>
 		</div>
 	</div>
 	
-	<nav class="footer-nav">
-				<ul class="footer-nav_left">
+	<div class="footer-bottom-line clearfix">
+		<div class="inner-block">
+			<ul class="footer-nav_left">
 					<li>
 						<a href="#">Polityka cookies</a>
 					</li>
@@ -114,15 +115,18 @@
 						<a href="#">Praca</a>
 					</li>
 				</ul>
-
-				<ul class="footer-nav_right">
+		</div>
+		<div class="inner-block text-right">
+			<ul class="footer-nav_right">
 					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 					<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
 				</ul>
-			</nav>
+		</div>
+	</div>
+
 
 </footer>
 {{-- / Footer --}}
