@@ -144,7 +144,6 @@
 						header.css({
 							"top": topPosition + "px"
 						});
-						console.log('c = ' + color);
 						if(color == 0) {
 							$(header).removeClass('white-objects').addClass('black-objects').addClass('scrolled');
 						}
