@@ -843,6 +843,157 @@ footer {
 .portfolio-nav-right .pos-relative:before {
   right: -75px; }
 
+/*-------Studio-----------*/
+.fz36 {
+  font-size: 36px; }
+
+.studio-inner-block {
+  position: relative;
+  height: 670px;
+  overflow: hidden; }
+  .studio-inner-block:hover img {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05); }
+  @media (max-width: 992px) {
+    .studio-inner-block {
+      height: 480px; } }
+  .studio-inner-block img {
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    -o-transition: transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1; }
+
+.studio-inner-block_descr {
+  padding-right: 172px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
+  @media (max-width: 1190px) {
+    .studio-inner-block_descr {
+      padding-right: 40px; } }
+  @media (max-width: 768px) {
+    .studio-inner-block_descr {
+      left: 40%; } }
+  @media (max-width: 450px) {
+    .studio-inner-block_descr {
+      left: 40px; } }
+  .studio-inner-block_descr .inner-block_link__big-title {
+    color: #000; }
+  .studio-inner-block_descr .inner-block_link__small-title {
+    color: rgba(0, 0, 0, 0.6); }
+  .studio-inner-block_descr .title-block_desc {
+    font-size: 18px;
+    line-height: 26px; }
+
+.studio-text {
+  margin-top: 100px;
+  color: #000;
+  padding-bottom: 100px; }
+  .studio-text h3 {
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .studio-text p {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .studio-text p, .studio-text h3, .studio-text ul {
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 30px; }
+    @media (max-width: 992px) {
+      .studio-text p, .studio-text h3, .studio-text ul {
+        margin-left: 10%;
+        margin-right: 10%; } }
+  .studio-text ul {
+    padding: 0; }
+    .studio-text ul li {
+      list-style-type: none;
+      position: relative;
+      padding-left: 20px; }
+      .studio-text ul li:before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: #000; }
+  .studio-text img {
+    padding-right: 172px;
+    padding-left: 172px;
+    max-width: 100%;
+    margin: 70px auto;
+    display: block; }
+    @media (max-width: 992px) {
+      .studio-text img {
+        padding-left: 40px;
+        padding-right: 40px; } }
+    @media (max-width: 768px) {
+      .studio-text img {
+        padding-left: 15px;
+        padding-right: 15px; } }
+
+.partners-block {
+  padding-top: 100px;
+  border-top: 1px solid #dcdcdc; }
+
+.logo-wrapp {
+  width: 20%;
+  float: left;
+  text-align: center;
+  margin: 10px 0;
+  position: relative;
+  display: block;
+  height: 100px;
+  overflow: hidden;
+  padding: 0 10px; }
+  @media (max-width: 768px) {
+    .logo-wrapp {
+      width: 50%; } }
+  @media (max-width: 450px) {
+    .logo-wrapp {
+      width: 100%; } }
+  .logo-wrapp:hover img {
+    -webkit-transform: translate(-50%, -50%) scale(1.07);
+        -ms-transform: translate(-50%, -50%) scale(1.07);
+            transform: translate(-50%, -50%) scale(1.07); }
+  .logo-wrapp img {
+    max-width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+
+.partners-wrapp {
+  margin-top: 70px;
+  margin-bottom: 70px; }
+  @media (max-width: 1190px) {
+    .partners-wrapp {
+      padding-right: 40px;
+      padding-left: 40px; } }
+
 header {
   position: fixed;
   left: 0;

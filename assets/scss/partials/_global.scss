@@ -755,3 +755,190 @@ footer {
 		right: -75px;
 	}
 }
+
+
+/*-------Studio-----------*/
+
+
+.fz36 {
+	font-size: 36px;
+}
+
+.studio-inner-block {
+	position: relative;
+	height: 670px;
+	overflow: hidden;
+
+	&:hover {
+		img {
+			transform: scale(1.05);
+		}
+	}
+
+	@media(max-width: 992px) {
+		height: 480px;
+	}
+	
+	img {
+		transition: transform 0.2s;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		//object-position: 25% 0;
+		z-index: -1;
+	}
+
+}
+
+.studio-inner-block_descr {
+	padding-right: 172px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(0,-50%);
+
+	@media(max-width: 1190px) {
+		padding-right: 40px;
+	}
+
+	@media(max-width: 768px) {
+		left: 40%;
+	}
+	
+	@media(max-width: 450px) {
+		left: 40px;
+	}
+
+	.inner-block_link__big-title {
+		color: #000;
+	}
+	.inner-block_link__small-title {
+		color: rgba(0,0,0,.6);
+	}
+	.title-block_desc {
+		font-size: 18px;
+		line-height: 26px;
+	}
+}
+
+
+.studio-text {
+	margin-top: 100px;
+	color: #000;
+	padding-bottom: 100px;
+	
+	h3 {
+		font-size: 36px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	p {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	p, h3, ul {
+		margin-left: 20%;
+		margin-right: 20%;
+		line-height: 30px;
+		@media(max-width: 992px) {
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+	}
+
+	ul {
+		padding: 0;
+		
+		li {
+			list-style-type: none;
+			position: relative;
+			padding-left: 20px;
+			
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0px;
+				top: 50%;
+				transform: translate(0, -50%);
+				display: block;
+				width: 5px;
+				height: 5px;
+				background-color: #000;
+			}
+		}
+	}
+
+	img {
+		padding-right: 172px;
+		padding-left: 172px;
+		max-width: 100%;
+		margin: 70px auto;
+		display: block;
+		@media(max-width: 992px) {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+		@media(max-width: 768px) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+}
+
+.partners-block {
+	padding-top: 100px;
+	border-top: 1px solid #dcdcdc;
+}
+
+.logo-wrapp {
+	width: 20%;
+	float: left;
+	text-align: center;
+	margin: 10px 0;
+	position: relative;
+	display: block;
+	height: 100px;
+	overflow: hidden;
+	padding: 0 10px;
+
+	@media(max-width: 768px) {
+		width: 50%;
+	}
+
+	@media(max-width: 450px) {
+		width: 100%;
+	}
+
+	&:hover {
+		img {
+			transform: translate(-50%,-50%) scale(1.07);
+		}
+	}
+
+	img {
+		max-width: 90%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		transition: all 0.2s;
+	}
+
+}
+
+.partners-wrapp {
+	margin-top: 70px;
+	margin-bottom: 70px;
+	
+	@media(max-width: 1190px) {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+
+}
