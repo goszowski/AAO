@@ -2,6 +2,16 @@
 
 @section('app')
 
+<div id="preloader" class="preloader aa">
+	<div class="loader">
+		<div class="loader-logo"></div>
+		<div class="loader-line">
+			<div class="loader-default"></div>
+			<div class="loader-progress"></div>
+		</div>
+	</div>
+</div>
+
 <header class="@yield('header-class', 'black-objects')">
 	<a href="/" class="logo">
 		<span class="logo-default-state"></span>

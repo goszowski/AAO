@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&amp;subset=latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Maitree&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/assets/vendor/font-awesome/css/font-awesome.min.css">
-	<!--  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-sass-grid/css/bootstrap-sass-grid.min.css">  -->
+	<!--	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-sass-grid/css/bootstrap-sass-grid.min.css">	-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
 	<link rel="stylesheet" href="/assets/dist/css/style.min.css">
@@ -183,8 +183,46 @@
 });
 
 
-</script>
+	$(document).ready(function () {
+		var preloader		= $('#preloader'), // селектор прелоадера
+				imagesCount	= $('img').length, // количество изображений
+				dBody				= $('body'), //обращаемся к body
+				dHtml				= $('html'),
+				percent			= 100 / imagesCount, // количество % на одну картинку
+				progress		= 0, // точка отсчета
+				loadedImg		= 0; // счетчик загрузки картинок
 
-@yield('page-scripts')
+				if (imagesCount > 0) {
+					dBody.css('overflow', 'hidden');
+					dHtml.css('overflow', 'hidden');
+
+
+				for (var i = 0; i < imagesCount; i++) { // создаем клоны изображений
+					var img_copy				= new Image();
+					img_copy.src				= document.images[i].src;
+					img_copy.onload			= img_load;
+					img_copy.onerror		= img_load;
+				}
+
+				function img_load () {
+					progress += percent;
+					$(".loader-progress").css('width', progress + '%');
+					loadedImg++;
+					if (progress >= 100 || loadedImg == imagesCount) {
+						preloader.delay(400).fadeOut('slow');
+						dBody.css('overflow', '');
+						dHtml.css('overflow', '');
+					}
+					
+				}
+			} else {
+				preloader.addClass('hidden');
+			}
+
+		});
+
+	</script>
+
+	@yield('page-scripts')
 </body>
 </html>
