@@ -1229,6 +1229,7 @@ input.chk-btn:checked + label {
   display: inline-block; }
 
 .contact-btn {
+  padding-top: 0;
   border-top: none; }
 
 header {
