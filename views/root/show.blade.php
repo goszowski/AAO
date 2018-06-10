@@ -4,19 +4,26 @@
 
 @section('content')
 
-<ul class="home-slider owl-carousel">
+<div class="block-relative">
+	<ul class="home-slider owl-carousel">
 
-	@for($i=1; $i<=4; $i++)
-	<li class="home-slider__item">
-		<span class="home-slider__item__title">
-			<span>Lorem ipsum dolor {{ $i }}</span>
-			Fotografia spałniająca oczekiwania {{ $i }}
-		</span>
-		<img src="/assets/dist/images/demo/slider-1.jpg" alt="The title of the slide">
-	</li>
-	@endfor
+		@for($i=1; $i<=4; $i++)
+		<li class="home-slider__item">
+			<span class="home-slider__item__title">
+				<span>Lorem ipsum dolor {{ $i }}</span>
+				Fotografia spałniająca oczekiwania {{ $i }}
+			</span>
+			<img src="/assets/dist/images/demo/slider-1.jpg" alt="The title of the slide">
+		</li>
+		@endfor
 
-</ul>
+	</ul>
+	
+	<div class="mouse">
+		<img src="assets/dist/images/mause_w.svg" alt="mouse">
+	</div>
+</div>
+
 
 <div class="title-block clearfix text-xs-md-center">
 	<div class="inner-block pl-172">

@@ -20,6 +20,19 @@ a {
 	}
 }
 
+.mouse {
+	position: absolute;
+	right: 95px;
+	bottom: 85px;
+	z-index: 5;
+	
+	@media(max-width: 992px) {
+		right: 30px;
+		bottom: 30px;
+	}
+
+}
+
 .btn-transp {
 	background-color: transparent;
 	border: none;
