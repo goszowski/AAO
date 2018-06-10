@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&amp;subset=latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Maitree&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/assets/vendor/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-sass-grid/css/bootstrap-sass-grid.min.css">
+	<!--  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-sass-grid/css/bootstrap-sass-grid.min.css">  -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
 	<link rel="stylesheet" href="/assets/dist/css/style.min.css">

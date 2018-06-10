@@ -302,6 +302,10 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 html, body {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
@@ -564,6 +568,13 @@ a {
   text-transform: uppercase; }
 
 .has-icon-btn {
+  background-color: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+  outline: 0;
+  cursor: pointer;
   letter-spacing: 2.64px;
   font-weight: bold;
   color: #000;
@@ -1081,6 +1092,144 @@ footer {
       color: #fff; }
       .oferta-list li a:hover {
         text-decoration: underline !important; }
+
+/*---------brief------------*/
+.contact-form {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 100px; }
+  @media (min-width: 1300px) {
+    .contact-form {
+      padding-left: 172px;
+      padding-right: 172px; } }
+  @media (max-width: 768px) {
+    .contact-form {
+      margin-bottom: 50px; } }
+  .contact-form .title-block_small-title {
+    margin-bottom: 30px; }
+
+.has-label {
+  margin-bottom: 70px; }
+  @media (max-width: 768px) {
+    .has-label {
+      margin-bottom: 30px; } }
+  .has-label .title-block_small-title {
+    margin-bottom: 50px; }
+  .has-label .form-control {
+    margin-bottom: 40px; }
+
+.form-group {
+  width: 33.3333%;
+  float: left;
+  padding: 0 15px; }
+  @media (max-width: 1190px) {
+    .form-group {
+      width: 100%;
+      float: none; } }
+
+.form-control {
+  margin: 15px 0;
+  padding: 15px 0;
+  letter-spacing: 0.44px;
+  font-size: 16px;
+  outline: 0;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 100%;
+  background: transparent;
+  border-bottom: 1px solid #dcdcdc; }
+  .form-control:focus, .form-control:active {
+    border-bottom: 1px solid #000; }
+
+.form-control::-webkit-input-placeholder {
+  color: rgba(5, 5, 5, 0.5);
+  letter-spacing: 0.44px; }
+
+.form-control::-moz-placeholder {
+  color: rgba(5, 5, 5, 0.5);
+  letter-spacing: 0.44px; }
+
+.form-control:-ms-input-placeholder {
+  color: rgba(5, 5, 5, 0.5);
+  letter-spacing: 0.44px; }
+
+.form-control::-ms-input-placeholder {
+  color: rgba(5, 5, 5, 0.5);
+  letter-spacing: 0.44px; }
+
+.form-control::placeholder {
+  color: rgba(5, 5, 5, 0.5);
+  letter-spacing: 0.44px; }
+
+.ph-bold::-webkit-input-placeholder {
+  color: #050505;
+  font-weight: 700; }
+
+.ph-bold::-moz-placeholder {
+  color: #050505;
+  font-weight: 700; }
+
+.ph-bold:-ms-input-placeholder {
+  color: #050505;
+  font-weight: 700; }
+
+.ph-bold::-ms-input-placeholder {
+  color: #050505;
+  font-weight: 700; }
+
+.ph-bold::placeholder {
+  color: #050505;
+  font-weight: 700; }
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.form-control_label {
+  letter-spacing: 0.44px;
+  font-size: 16px;
+  font-weight: 700; }
+  @media (max-width: 1600px) {
+    .form-control_label {
+      font-size: 12px; } }
+
+input.chk-btn {
+  display: none; }
+
+input.chk-btn + label {
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  cursor: pointer;
+  -webkit-border-radius: 0px;
+          border-radius: 0px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #cecece;
+  margin: 0 15px; }
+
+input.chk-btn:not(:checked) + label:hover {
+  border: 1px solid #000; }
+
+input.chk-btn + label:active,
+input.chk-btn:checked + label {
+  border: 1px solid #000;
+  color: #000; }
+
+.checkb-wrapp {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  display: inline-block; }
+
+.contact-btn {
+  border-top: none; }
 
 header {
   position: fixed;

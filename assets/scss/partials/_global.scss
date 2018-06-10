@@ -1,3 +1,10 @@
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
 html, body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 18px;
@@ -348,6 +355,12 @@ a {
 }
 
 .has-icon-btn {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	padding: 0;
+	outline: 0;
+	cursor: pointer;
 	letter-spacing: 2.64px;
 	font-weight: bold;
 	color: #000;
@@ -1070,4 +1083,148 @@ footer {
 		}
 	}
 
+}
+
+
+
+/*---------brief------------*/
+
+.contact-form {
+	
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-bottom: 100px;
+
+	@media(min-width: 1300px) {
+		padding-left: 172px;
+		padding-right: 172px;
+	}
+
+	@media(max-width: 768px) {
+		margin-bottom: 50px;
+	}
+
+	.title-block_small-title {
+		margin-bottom: 30px;
+	}
+}
+
+.has-label {
+	margin-bottom: 70px;
+
+	@media(max-width: 768px) {
+		margin-bottom: 30px;
+	}
+
+	.title-block_small-title {
+		margin-bottom: 50px;
+	}
+
+	.form-control {
+		margin-bottom: 40px;
+	}
+}
+
+
+.form-group {
+	width: 33.3333%;
+	float: left;
+	padding: 0 15px;
+	
+	@media(max-width: 1190px){
+		width: 100%;
+		float: none;
+	}
+
+}
+
+
+.form-control {
+	margin: 15px 0;
+	padding: 15px 0;
+	letter-spacing: 0.44px;
+	font-size: 16px;
+	outline: 0;
+	border: none;
+	box-shadow: none;
+	width: 100%;
+	background: transparent;
+	border-bottom: 1px solid #dcdcdc;
+	
+	&:focus, &:active {
+		border-bottom: 1px solid #000;
+	}
+
+}
+
+.form-control::placeholder {
+	color: rgba(5,5,5,0.5);
+	letter-spacing: 0.44px;
+}
+
+.ph-bold::placeholder {
+	color: #050505;
+	font-weight: 700;
+}
+
+
+
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.clearfix {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.form-control_label {
+	letter-spacing: 0.44px;
+	font-size: 16px;
+	font-weight: 700;
+
+	@media(max-width: 1600px) {
+		font-size: 12px;
+	}
+}
+
+
+input.chk-btn {
+	display: none;
+}
+input.chk-btn + label {
+	border: 1px solid transparent;
+	padding: 5px 15px;
+	cursor: pointer;
+	border-radius: 0px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #cecece;
+	margin: 0 15px;
+	
+}
+input.chk-btn:not(:checked) + label:hover {
+	border: 1px solid #000;
+}
+input.chk-btn + label:active,
+input.chk-btn:checked + label {
+	border: 1px solid #000;
+	color: #000;
+}
+
+.checkb-wrapp {
+	margin-top: 15px;
+	margin-bottom: 25px;
+	display: inline-block;
+}
+
+.contact-btn {
+	border-top: none;
 }
