@@ -96,7 +96,7 @@
 </div>
 
 
-
+@include('partials.block-link')
 
 
 @endsection

@@ -14,10 +14,12 @@
 	</div>
 </div>
 
+<form action="">
+
 <div class="contact-form clearfix">
 	<p class="title-block_small-title">Podstawowe informacje</p>
 	<div class="row">
-		<form action="">
+
 			<div class="form-group">
 				<input type="text" name="firma" class="form-control ph-bold" id="firma" placeholder="Nazwa firmy">
 			</div>
@@ -36,14 +38,14 @@
 			<div class="form-group">
 				<input type="text" name="phone" class="form-control ph-bold" id="phone" placeholder="Telefon">
 			</div>
-		</form>
+
 	</div>
 </div>
 
 <div class="contact-form has-label clearfix">
 	<p class="title-block_small-title">Informacje jakieś</p>
 	<div class="row">
-		<form action="">
+
 			<div class="form-group">
 				<label for="domen" class="form-control_label">Obecna domena</label>
 				<input type="text" name="domen" class="form-control" id="domen" placeholder="Uzupełnij pole">
@@ -68,13 +70,13 @@
 				<label for="opis2" class="form-control_label">Krótki opis działalności / usług / produktów 2</label>
 				<input type="text" name="opis2" class="form-control" id="opis2" placeholder="Uzupełnij pole">
 			</div>
-		</form>
+	
 	</div>
 </div>
 
 <div class="contact-form">
 	<p class="title-block_small-title">Wybierz interesujący cię produkt</p>
-	<form action="">
+
 		<div class="row">
 			<div class="checkb-wrapp">
 				<input type="checkbox" id='c1' class='chk-btn' />
@@ -101,14 +103,14 @@
 				<label for='c6'>Oferta 6</label>
 			</div>
 		</div>
-	</form>
+
 </div>
 
 
 <div class="contact-form has-label clearfix">
 	<p class="title-block_small-title">Dodatkowe inforamcje</p>
 	<div class="row">
-		<form action="">
+
 			<div class="form-group">
 				<label for="domen3" class="form-control_label">Obecna domena</label>
 				<input type="text" name="domen3" class="form-control" id="domen3" placeholder="Uzupełnij pole">
@@ -133,22 +135,13 @@
 				<label for="opis4" class="form-control_label">Krótki opis działalności / usług / produktów 2</label>
 				<input type="text" name="opis4" class="form-control" id="opis4" placeholder="Uzupełnij pole">
 			</div>
-		</form>
+
 	</div>
 </div>
 
+@include('partials.block-button')
 
-<div class="inner-block_wrapp contact-btn clearfix pl-172 pr-172">
-	<div class="inner-block">
-		<p class="title-block_small-title">Odpowiemy w ciągu 24h</p>
-		<h2 class="title-block_big-title fz48">Prześlij brief</h2>
-	</div>
-	<div class="inner-block text-right">
-		<button class="has-icon-btn text-uppercase">WYPEŁNIJ <img src="assets/dist/images/arrow_b.svg" alt="d"></button> 
-	</div>
-</div>
-
-
+</form>
 
 @endsection
 

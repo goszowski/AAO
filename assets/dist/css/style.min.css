@@ -1296,6 +1296,58 @@ input.chk-btn:checked + label {
 .hidden {
   display: none; }
 
+.inner-portfolio {
+  position: absolute;
+  z-index: 50000;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+  .inner-portfolio .block-relative {
+    -webkit-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s; }
+
+.stage-close {
+  width: 0%;
+  height: 0%; }
+  .stage-close .block-relative {
+    width: 0%; }
+
+.stage-open {
+  width: 100%;
+  height: 100%; }
+  .stage-open .block-relative {
+    background-color: #fff;
+    width: 100%; }
+
+.close-portfolio {
+  position: fixed;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  color: #f5f5f5;
+  width: 50px;
+  height: 48px;
+  right: 40px;
+  top: 40px;
+  outline: 0;
+  z-index: 500001;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+  .close-portfolio:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff; }
+
 header {
   position: fixed;
   left: 0;

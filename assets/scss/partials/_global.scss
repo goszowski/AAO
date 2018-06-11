@@ -1309,3 +1309,59 @@ input.chk-btn:checked + label {
 .hidden {
 	display: none;
 }
+
+.inner-portfolio {
+	position: absolute;
+	z-index: 50000;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	transition: all 1s;
+	.block-relative {
+		transition: width 1s;
+	}
+}
+
+.stage-close {
+	width: 0%;
+	height: 0%;
+	.block-relative {
+		width: 0%;
+	}
+}
+
+.stage-open {
+	width: 100%;
+	height: 100%;
+	.block-relative {
+		background-color: #fff;
+		width: 100%;
+	}
+}
+
+
+
+.close-portfolio {
+	position: fixed;
+	border: none;
+	box-shadow: none;
+	display: inline-block;
+	border-radius: 50%;
+	color: #f5f5f5;
+	width: 50px;
+	height: 48px;
+	right: 40px;
+	top: 40px;
+	outline: 0;
+	z-index: 500001;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.2);
+	transition: all 0.2s;
+	
+	&:hover {
+		background-color: rgba(0,0,0,0.4);
+		color: #fff;
+	}
+
+}
