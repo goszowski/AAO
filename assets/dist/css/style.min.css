@@ -1420,6 +1420,32 @@ input.chk-btn:checked + label {
       background-color: #fff;
       z-index: 100; } }
 
+.pace-running {
+  position: relative; }
+  .pace-running:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 1999; }
+  .pace-running:after {
+    content: '';
+    position: fixed;
+    background: url("../images/logo_mause_b.svg") no-repeat 0 0;
+    left: 50%;
+    top: -webkit-calc(50% - 70px);
+    top: calc(50% - 70px);
+    display: inline-block;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 50px;
+    width: 110px;
+    z-index: 2000; }
+
 header {
   position: fixed;
   left: 0;

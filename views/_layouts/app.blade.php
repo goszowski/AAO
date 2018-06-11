@@ -2,6 +2,7 @@
 
 @section('app')
 
+<!--
 <div id="preloader" class="preloader">
 	<div class="loader">
 		<div class="loader-logo"></div>
@@ -11,6 +12,8 @@
 		</div>
 	</div>
 </div>
+
+-->
 
 <header class="@yield('header-class', 'black-objects')">
 	<a href="/" class="logo">

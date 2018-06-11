@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&amp;subset=latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Maitree&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/assets/vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/pace/pace.css">
 	<!--	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-sass-grid/css/bootstrap-sass-grid.min.css">	-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
@@ -18,10 +19,11 @@
 	@yield('app')
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/vendor/pace/pace.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	
-	<script>
 
+	<script>
+	
 	var color = 0; //white-objects
 
 	$(function(){
@@ -183,7 +185,7 @@
 });
 
 
-	$(document).ready(function () {
+/*	$(document).ready(function () {
 		var preloader		= $('#preloader'), // селектор прелоадера
 				imagesCount	= $('img').length, // количество изображений
 				dBody				= $('body'), //обращаемся к body
@@ -219,7 +221,7 @@
 				preloader.addClass('hidden');
 			}
 
-		});
+		});*/
 
 		$('.portfolio-link').on('click', function(event){
 			//event.preventDefault();

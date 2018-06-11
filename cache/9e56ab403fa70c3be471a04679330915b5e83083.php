@@ -1,5 +1,6 @@
 <?php $__env->startSection('app'); ?>
 
+<!--
 <div id="preloader" class="preloader">
 	<div class="loader">
 		<div class="loader-logo"></div>
@@ -9,6 +10,8 @@
 		</div>
 	</div>
 </div>
+
+-->
 
 <header class="<?php echo $__env->yieldContent('header-class', 'black-objects'); ?>">
 	<a href="/" class="logo">
