@@ -225,12 +225,14 @@
 			//event.preventDefault();
 
 			$(this).addClass('portfolio-open');
+			$('body').addClass('all-white');
 			$(this).parent().find('.inner-portfolio').removeClass('hidden').addClass('stage-open');
 			$(this).parent().find('.close-portfolio').delay(500).fadeIn();
 
 		});
 
 		$('.close-portfolio').on('click', function(){
+			$('body').removeClass('all-white');
 			$('.portfolio-link').removeClass('portfolio-open');
 			$('.inner-portfolio').removeClass('stage-open').addClass('hidden');
 		});
