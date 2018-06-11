@@ -221,6 +221,20 @@
 
 		});
 
+		$('.portfolio-link').on('click', function(event){
+			//event.preventDefault();
+
+			$(this).addClass('portfolio-open');
+			$(this).parent().find('.inner-portfolio').removeClass('hidden').addClass('stage-open');
+			$(this).parent().find('.close-portfolio').delay(500).fadeIn();
+
+		});
+
+		$('.close-portfolio').on('click', function(){
+			$('.portfolio-link').removeClass('portfolio-open');
+			$('.inner-portfolio').removeClass('stage-open').addClass('hidden');
+		});
+
 	</script>
 
 	@yield('page-scripts')
