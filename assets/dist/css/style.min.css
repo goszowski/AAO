@@ -427,8 +427,8 @@ a {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: 50% 0;
-       object-position: 50% 0; }
+    -o-object-position: 25% 0;
+       object-position: 25% 0; }
   @media (min-width: 2500px) {
     .inner-block_link {
       height: 750px; } }
@@ -763,6 +763,10 @@ footer {
     -webkit-transition: color 0.2s;
     -o-transition: color 0.2s;
     transition: color 0.2s; }
+    @media (max-width: 1190px) {
+      .portfolio-nav a {
+        margin-right: 20px;
+        margin-left: 20px; } }
     @media (min-width: 2400px) {
       .portfolio-nav a {
         margin-right: 55px; } }
@@ -1300,16 +1304,19 @@ input.chk-btn:checked + label {
   position: absolute;
   z-index: 50000;
   left: 0;
-  top: 0;
+  top: 480px;
   bottom: 0;
   right: 0;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s; }
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
   .inner-portfolio .block-relative {
-    -webkit-transition: width 1s;
-    -o-transition: width 1s;
-    transition: width 1s; }
+    -webkit-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    transition: width 0.5s; }
+  @media (min-width: 2000px) {
+    .inner-portfolio {
+      top: 900px; } }
 
 .stage-close {
   width: 0%;
@@ -1344,9 +1351,32 @@ input.chk-btn:checked + label {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s; }
+  @media (max-width: 768px) {
+    .close-portfolio {
+      right: 15px;
+      top: 15px; } }
   .close-portfolio:hover {
     background-color: rgba(0, 0, 0, 0.4);
     color: #fff; }
+
+.portfolio-open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50000; }
+  @media (min-width: 2000px) {
+    .portfolio-open {
+      height: 900px; } }
+  .portfolio-open .inner-block_link__descr {
+    display: none; }
+  .portfolio-open:hover {
+    cursor: default; }
+    .portfolio-open:hover:before {
+      background-color: transparent; }
+    .portfolio-open:hover img {
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1); }
 
 header {
   position: fixed;

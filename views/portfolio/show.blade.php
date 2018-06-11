@@ -36,16 +36,11 @@
 					<p class="inner-block_link__small-title">Kategoria 2</p>
 				</div>
 			</a>
-
-
+			
 			<div class="hidden inner-portfolio stage-close">
 				<div class="block-relative">
 					
 					<button class="close-portfolio"><i class="fa fa-close"></i></button>
-
-					<div class="portfolio-inner-head">
-						<img src="assets/dist/images/demo/slider-1.jpg" alt="head">
-					</div>
 
 					<div class="title-block clearfix text-xs-md-center">
 						<div class="inner-block pl-172">
@@ -93,7 +88,6 @@
 					</div>
 				</div>
 			</div>
-
 
 		</div>
 		<div class="inner-block">
@@ -156,17 +150,19 @@
 @section('page-scripts')
 <script>
 	
-	$('.inner-block_link').on('click', function(){
+	$('.inner-block_link').on('click', function(event){
+		//event.preventDefault();
 
-		$(this).parent().find('.inner-portfolio').removeClass('hidden').fadeIn('fast').addClass('stage-open');
+		$(this).addClass('portfolio-open');
+
+		$(this).parent().find('.inner-portfolio').removeClass('hidden').addClass('stage-open');
 		$(this).parent().find('.close-portfolio').delay(500).fadeIn();
 
 	});
 
 	$('.close-portfolio').on('click', function(){
-
-		$('.inner-portfolio').fadeOut('slow').removeClass('stage-open');
-		$('.close-portfolio').fadeOut();
+		$('.inner-block_link').removeClass('portfolio-open');
+		$('.inner-portfolio').removeClass('stage-open').addClass('hidden');
 	});
 
 

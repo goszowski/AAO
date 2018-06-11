@@ -163,7 +163,7 @@ a {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		object-position: 50% 0;
+		object-position: 25% 0;
 	}
 
 	@media(min-width: 2500px) {
@@ -637,6 +637,11 @@ footer {
 		margin-right: 40px;
 		margin-top: 10px;
 		transition: color 0.2s;
+
+		@media(max-width: 1190px) {
+			margin-right: 20px;
+			margin-left: 20px;
+		}
 
 		@media(min-width: 2400px) {
 			margin-right: 55px;
@@ -1314,13 +1319,18 @@ input.chk-btn:checked + label {
 	position: absolute;
 	z-index: 50000;
 	left: 0;
-	top: 0;
+	top: 480px;
 	bottom: 0;
 	right: 0;
-	transition: all 1s;
+	transition: all 0.5s;
 	.block-relative {
-		transition: width 1s;
+		transition: width 0.5s;
 	}
+	
+	@media(min-width: 2000px) {
+		top: 900px;
+	}
+
 }
 
 .stage-close {
@@ -1358,10 +1368,42 @@ input.chk-btn:checked + label {
 	cursor: pointer;
 	background-color: rgba(0,0,0,0.2);
 	transition: all 0.2s;
+
+	@media(max-width: 768px) {
+		right: 15px;
+		top: 15px;
+	}
 	
 	&:hover {
 		background-color: rgba(0,0,0,0.4);
 		color: #fff;
+	}
+
+}
+
+
+.portfolio-open {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50000;
+
+	@media(min-width: 2000px) {
+		height: 900px;
+	}
+
+	.inner-block_link__descr {
+		display: none;
+	}
+	
+	&:hover {
+		cursor: default;
+		&:before {
+			background-color: transparent;
+		}
+		img {
+			transform: scale(1);
+		}
 	}
 
 }
