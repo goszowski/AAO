@@ -316,6 +316,8 @@
 			items: 1,
 			loop: true,
 			dots: true,
+			animateOut: 'fadeOutLeftBig',
+			animateIn: 'fadeIn',
 			autoplay: true,
 			autoplayTimeout: homeSliderAutoplayTimeout,
 		});

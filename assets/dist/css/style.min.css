@@ -542,17 +542,20 @@ a {
   .bottom_links-wrapp.pl-172 {
     padding-left: 40px; } }
 
-@media (max-width: 450px) {
-  .bottom_links-wrapp.pl-172 {
-    padding-left: 15px; } }
-
+/*
+.bottom_links-wrapp.pl-172 {
+	@media(max-width: 450px) {
+		padding-left: 15px;
+	}
+}
+*/
 @media (max-width: 1190px) {
   .bottom_links-wrapp.pr-172 {
     padding-right: 40px; } }
 
-@media (max-width: 1190px) {
+@media (max-width: 450px) {
   .bottom_links-wrapp.pr-172 {
-    padding-left: 15px; } }
+    padding-right: 15px; } }
 
 .inner-block_wrapp {
   margin-top: 0;
@@ -615,7 +618,7 @@ a {
       width: 50%; } }
 
 @media (max-width: 650px) {
-  inner-block_wrapp.pl-172 .inner-block {
+  .inner-block_wrapp.pl-172 .inner-block {
     float: none;
     width: 100%; } }
 
@@ -1446,6 +1449,10 @@ input.chk-btn:checked + label {
     width: 110px;
     z-index: 10000; }
 
+.owl-carousel .owl-item {
+  -webkit-animation-duration: 3s !important;
+  animation-duration: 3s !important; }
+
 header {
   position: fixed;
   left: 0;
@@ -1684,27 +1691,27 @@ header.scrolled {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: -100vw;
+  right: -100vw;
   width: 100vw;
   background: #fff;
   z-index: 2;
-  -webkit-transition: width .7s ease-in, left .7s ease-in;
-  -o-transition: width .7s ease-in, left .7s ease-in;
-  transition: width .7s ease-in, left .7s ease-in;
+  -webkit-transition: width .7s ease-in, right .7s ease-in;
+  -o-transition: width .7s ease-in, right .7s ease-in;
+  transition: width .7s ease-in, right .7s ease-in;
   overflow-x: hidden; }
   #navigation .navigation-inner {
     position: absolute;
-    left: -500px;
+    right: -500px;
     top: 0px;
     width: 100vw;
     height: 100vh;
-    -webkit-transition: left .7s ease-in;
-    -o-transition: left .7s ease-in;
-    transition: left .7s ease-in; }
+    -webkit-transition: rightt .7s ease-in;
+    -o-transition: rightt .7s ease-in;
+    transition: rightt .7s ease-in; }
   #navigation.open {
-    left: 0vw; }
+    right: 0vw; }
     #navigation.open .navigation-inner {
-      left: 0px; }
+      right: 0px; }
   #navigation .main-nav {
     position: absolute;
     left: 170px;
@@ -1925,9 +1932,9 @@ main {
   overflow: hidden;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
   -webkit-transition: -webkit-transform .8s ease-in;
   transition: -webkit-transform .8s ease-in;
   -o-transition: transform .8s ease-in;
