@@ -109,7 +109,7 @@
 			</div>
 		</div>
 		<div class="inner-block text-right">
-			<span id="up" class="has-icon-btn text-uppercase transform-btn white-btn fz10 to-top">TO TOP<img src="assets/dist/images/arrow_w.svg" alt="d"></span>
+			<span id="up" class="has-icon-btn text-uppercase transform-btn white-btn fz10 to-top">TO TOP<img src="/assets/dist/images/arrow_w.svg" alt="d"></span>
 		</div>
 	</div>
 	
