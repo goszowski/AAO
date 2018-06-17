@@ -10,7 +10,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Maitree&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/assets/vendor/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendor/pace/pace.css">
-	<link rel="stylesheet" type="text/css" href="../../assets/vendor/animate.css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/vendor/animate.css/animate.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/vendor/aos/dist/aos.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
 	<link rel="stylesheet" href="/assets/dist/css/style.min.css">
@@ -19,11 +20,14 @@
 	<?php echo $__env->yieldContent('app'); ?>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="assets/vendor/pace/pace.min.js"></script>
+	<script src="../../assets/vendor/aos/dist/aos.js"></script>
+	<script src="assets/vendor/pace/pace.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 	<script>
 	
+		
+
 	var color = 0; //white-objects
 
 	$(function(){
@@ -93,151 +97,117 @@
 	});
 
 	$(document).ready(function(){
+
+		setTimeout(function(){
+			$('body').removeClass();
+		}, 3000);
+
 		$('#up').click(function() {
 			$('html, body').animate({scrollTop: 0},700);
 			return false;
 		});
 
-	var header = $("header"); // Меню
-	var	header_h = header.height() + 22;
-	var scrollPrev = 0 // Предыдущее значение скролла
+		var header = $("header"); // Меню
+		var	header_h = header.height() + 22;
+		var scrollPrev = 0 // Предыдущее значение скролла
 	
-	$(window).scroll(function() {
-		var scrolled = $(window).scrollTop(); // Высота скролла в px
-		var firstScrollUp = false; // Параметр начала сколла вверх
-		var firstScrollDown = false; // Параметр начала сколла вниз
-		
-		// Если скроллим
-		if ( scrolled > 0 ) {
-			// Если текущее значение скролла > предыдущего, т.е. скроллим вниз
-			if ( scrolled > scrollPrev ) {
-				firstScrollUp = false; // Обнуляем параметр начала скролла вверх
-				// Если меню видно
-				if ( scrolled < header.height() + header.offset().top ) {
-					// Если только начали скроллить вниз
-					if ( firstScrollDown === false ) {
-						var topPosition = header.offset().top; // Фиксируем текущую позицию меню
-						header.css({
-							"top": topPosition + "px"
-						});
-						firstScrollDown = true;
-					}
-					// Позиционируем меню абсолютно
-					header.css({
-						"position": "absolute"
-					});
-				// Если меню НЕ видно
-			} else {
-					// Позиционируем меню фиксированно вне экрана
-					header.css({
-						"position": "fixed",
-						"top": "-" + header_h + "px"
-					});
-				}
-				
-			// Если текущее значение скролла < предыдущего, т.е. скроллим вверх
-		} else {
-				firstScrollDown = false; // Обнуляем параметр начала скролла вниз
-				// Если меню не видно
-				if ( scrolled > header.offset().top ) {
-					// Если только начали скроллить вверх
-					if ( firstScrollUp === false ) {
-						var topPosition = header.offset().top; // Фиксируем текущую позицию меню
-						header.css({
-							"top": topPosition + "px"
-						});
-						if(color == 0) {
-							$(header).removeClass('white-objects').addClass('black-objects').addClass('scrolled');
+		$(window).scroll(function() {
+			var scrolled = $(window).scrollTop(); // Высота скролла в px
+			var firstScrollUp = false; // Параметр начала сколла вверх
+			var firstScrollDown = false; // Параметр начала сколла вниз
+			
+			// Если скроллим
+			if ( scrolled > 0 ) {
+				// Если текущее значение скролла > предыдущего, т.е. скроллим вниз
+				if ( scrolled > scrollPrev ) {
+					firstScrollUp = false; // Обнуляем параметр начала скролла вверх
+					// Если меню видно
+					if ( scrolled < header.height() + header.offset().top ) {
+						// Если только начали скроллить вниз
+						if ( firstScrollDown === false ) {
+							var topPosition = header.offset().top; // Фиксируем текущую позицию меню
+							header.css({
+								"top": topPosition + "px"
+							});
+							firstScrollDown = true;
 						}
-						else {
-							$(header).addClass('scrolled');
-						}
-						firstScrollUp = true;
-					}
-					// Позиционируем меню абсолютно
-					header.css({
-						"position": "absolute"
-					});
+						// Позиционируем меню абсолютно
+						header.css({
+							"position": "absolute"
+						});
+					// Если меню НЕ видно
 				} else {
-					// Убираем все стили
-					header.removeAttr("style");
-					header.css({
-						"background-color": "#fff"
-					});
-				}
-			}
-			// Присваеваем текущее значение скролла предыдущему
-			scrollPrev = scrolled;
-		}
-		if(scrolled == 0) {
-			header.css({
-				"background-color": "transparent"
-			});
-			if(color == 0) {
-				$(header).removeClass('black-objects').removeClass('scrolled').addClass('white-objects');
-			} else {
-				$(header).removeClass('scrolled');
-			}
-		}
-	});	
-
-
-});
-
-
-/*	$(document).ready(function () {
-		var preloader		= $('#preloader'), // селектор прелоадера
-				imagesCount	= $('img').length, // количество изображений
-				dBody				= $('body'), //обращаемся к body
-				dHtml				= $('html'),
-				percent			= 100 / imagesCount, // количество % на одну картинку
-				progress		= 0, // точка отсчета
-				loadedImg		= 0; // счетчик загрузки картинок
-
-				if (imagesCount > 0) {
-					dBody.css('overflow', 'hidden');
-					dHtml.css('overflow', 'hidden');
-
-
-				for (var i = 0; i < imagesCount; i++) { // создаем клоны изображений
-					var img_copy				= new Image();
-					img_copy.src				= document.images[i].src;
-					img_copy.onload			= img_load;
-					img_copy.onerror		= img_load;
-				}
-
-				function img_load () {
-					progress += percent;
-					$(".loader-progress").css('width', progress + '%');
-					loadedImg++;
-					if (progress >= 100 || loadedImg == imagesCount) {
-						preloader.delay(400).fadeOut('slow');
-						dBody.css('overflow', '');
-						dHtml.css('overflow', '');
+						// Позиционируем меню фиксированно вне экрана
+						header.css({
+							"position": "fixed",
+							"top": "-" + header_h + "px"
+						});
 					}
 					
-				}
+				// Если текущее значение скролла < предыдущего, т.е. скроллим вверх
 			} else {
-				preloader.addClass('hidden');
+					firstScrollDown = false; // Обнуляем параметр начала скролла вниз
+					// Если меню не видно
+					if ( scrolled > header.offset().top ) {
+						// Если только начали скроллить вверх
+						if ( firstScrollUp === false ) {
+							var topPosition = header.offset().top; // Фиксируем текущую позицию меню
+							header.css({
+								"top": topPosition + "px"
+							});
+							if(color == 0) {
+								$(header).removeClass('white-objects').addClass('black-objects').addClass('scrolled');
+							}
+							else {
+								$(header).addClass('scrolled');
+							}
+							firstScrollUp = true;
+						}
+						// Позиционируем меню абсолютно
+						header.css({
+							"position": "absolute"
+						});
+					} else {
+						// Убираем все стили
+						header.removeAttr("style");
+						header.css({
+							"background-color": "#fff"
+						});
+					}
+				}
+				// Присваеваем текущее значение скролла предыдущему
+				scrollPrev = scrolled;
 			}
+			if(scrolled == 0) {
+				header.css({
+					"background-color": "transparent"
+				});
+				if(color == 0) {
+					$(header).removeClass('black-objects').removeClass('scrolled').addClass('white-objects');
+				} else {
+					$(header).removeClass('scrolled');
+				}
+			}
+		});
+	});
 
-		});*/
-
-		$('.portfolio-link').on('click', function(event){
+	$('.portfolio-link').on('click', function(event){
 			//event.preventDefault();
 
 			$(this).addClass('portfolio-open');
 			$('body').addClass('all-white');
+			$('.aos').removeAttr('data-aos');
 			$(this).parent().find('.inner-portfolio').removeClass('hidden').addClass('stage-open');
 			$(this).parent().find('.close-portfolio').delay(500).fadeIn();
 
 		});
 
-		$('.close-portfolio').on('click', function(){
-			$('body').removeClass('all-white');
-			$('.portfolio-link').removeClass('portfolio-open');
-			$('.inner-portfolio').removeClass('stage-open').addClass('hidden');
-		});
+	$('.close-portfolio').on('click', function(){
+		$('body').removeClass('all-white');
+		$('.portfolio-link').removeClass('portfolio-open');
+		$('.inner-portfolio').removeClass('stage-open').addClass('hidden');
+		$('.aos').attr('data-aos','zoom-in');
+	});
 
 	</script>
 

@@ -9,7 +9,8 @@
   "license": "ISC",
   "homepage": "",
   "dependencies": {
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "aos": "^2.3.0"
   },
   "devDependencies": {
     "animate.css": "^3.5.2"

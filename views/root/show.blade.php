@@ -25,7 +25,7 @@
 </div>
 
 
-<div class="title-block clearfix text-xs-md-center">
+<div data-aos="zoom-in" data-aos-duration="2000" class="aos title-block clearfix text-xs-md-center">
 	<div class="inner-block pl-172">
 		<p class="title-block_small-title">Foto STUDIO</p>
 			<h2 class="title-block_big-title">Kreacja</h2>
@@ -35,7 +35,7 @@
 	</div>
 </div>
 
-<div class="image-links">
+<div data-aos="zoom-in" class="aos image-links">
 	<div class="image-links_line clearfix">
 		<div class="inner-block">
 			<a href="#" class="inner-block_link portfolio-link">
@@ -45,7 +45,7 @@
 					<p class="inner-block_link__small-title">Kategoria 2</p>
 				</div>
 			</a>
-			<div class="hidden inner-portfolio stage-close">
+			<div class="hidden inner-portfolio stage-close" >
 				<div class="block-relative">
 					<button class="close-portfolio"><i class="fa fa-close"></i></button>
 					<div class="title-block clearfix text-xs-md-center">
@@ -266,23 +266,23 @@
 	<a href="#" class="all-portfolio_btn"><img src="assets/dist/images/arrow_b.svg" alt="arrow"></a>
 </div>
 
-<div class="bottom_links-wrapp pl-172 pr-172">
+<div data-aos="zoom-in" class="aos bottom_links-wrapp pl-172 pr-172">
 	<p class="title-block_small-title">Nasza kompleksowa oferta</p>
 	<h2 class="title-block_big-title">Kompetencje</h2>
 
 	<div class="bottom_links clearfix">
 		<div class="inner-block">
 			<ul class="links">
-				<li class="active"><a href="#">Oferta jeden tez</a></li>
-				<li><a href="#">Oferta lorem ipsum</a></li>
-				<li><a href="#">Oferta trzy oferta</a></li>
+				<li class="active"><a href="#" class="bottom-link">Oferta jeden tez</a></li>
+				<li><a href="#" class="bottom-link">Oferta lorem ipsum</a></li>
+				<li><a href="#" class="bottom-link">Oferta trzy oferta</a></li>
 			</ul>
 		</div>
 		<div class="inner-block">
 			<ul class="links">
-				<li><a href="#">Oferta jeden tez</a></li>
-				<li><a href="#">Oferta lorem ipsum</a></li>
-				<li><a href="#">Oferta trzy oferta</a></li>
+				<li><a href="#" class="bottom-link">Oferta jeden tez</a></li>
+				<li><a href="#" class="bottom-link">Oferta lorem ipsum</a></li>
+				<li><a href="#" class="bottom-link">Oferta trzy oferta</a></li>
 			</ul>
 		</div>
 	</div>
@@ -295,6 +295,8 @@
 
 @section('page-scripts')
 <script>
+
+
 	$(function() {
 		var homeSliderAutoplayTimeout = 6000;
 		var homeSlider = $('.home-slider');
@@ -316,18 +318,48 @@
 			items: 1,
 			loop: true,
 			dots: true,
-			animateOut: 'fadeOutLeftBig',
-			animateIn: 'fadeIn',
+			//animateOut: 'slideOutLeft',
+			//animateIn: 'slideInRight',
 			autoplay: true,
 			autoplayTimeout: homeSliderAutoplayTimeout,
 		});
 
 		homeSlider.on('change.owl.carousel', function(event) {
 			setTimeout(homeSliderRunProgress, 50);
+			$('.home-slider__item__title').removeClass('animation-start');
 		});
 
 		
+		homeSlider.on('changed.owl.carousel', function(event) {
+			var element = event.target;
+	
+			$(element).find('.home-slider__item__title').removeClass('animation-end').addClass('animation-start');
+			setTimeout(function(){
+				$(element).find('.home-slider__item__title').removeClass('animation-start').addClass('animation-end');
+			},5000);
+		});
+		
+		
 	});
+
+	$(document).ready(function(){
+
+		AOS.init({
+			duration: 1000,
+			offset: 200,
+		});
+
+		$('.bottom-link').hover(function(event){
+			//$('.bottom-link').removeClass('after-hidden before-opacity');
+			var link = event.target;
+			$(this).addClass('link-hover');
+		}, function(){
+			$(this).removeClass('link-hover');
+		});
+
+
+	});
+	
 
 	</script>
 @endsection

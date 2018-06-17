@@ -5,17 +5,17 @@
 @section('content')
 
 
-<div class="title-block title-block_portfolio clearfix text-xs-md-center">
+<div data-aos="zoom-in" class="aos title-block title-block_portfolio clearfix text-xs-md-center">
 	<div class="inner-block pl-172">
 		<p class="title-block_small-title">Foto STUDIO</p>
-			<h2 class="title-block_big-title">Kreacja</h2>
+		<h2 class="title-block_big-title">Kreacja</h2>
 	</div>
 	<div class="inner-block pr-172">
 		<p class="title-block_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quod facere laboriosam! Porro, fugiat! Aspernatur maxime recusandae neque deserunt quaerat eum animi est, quia enim! Consequuntur quasi ad nam voluptate.</p>
 	</div>
 </div>
 
-<div class="portfolio-nav pl-172 pr-172">
+<div data-aos="zoom-in" data-aos-offset="50" class="aos portfolio-nav pl-172 pr-172">
 	<ul>
 		<li class="active"><a href="#">Kategoria 1</a></li>
 		<li><a href="#">Kategoria 2</a></li>
@@ -26,7 +26,7 @@
 	</ul>
 </div>
 
-<div class="image-links">
+<div  data-aos="zoom-in"  data-aos-offset="50" class="aos image-links">
 	<div class="image-links_line clearfix">
 		<div class="inner-block">
 			<a href="#" class="inner-block_link portfolio-link">
@@ -94,7 +94,7 @@
 				</div>
 			</a>
 
-<div class="hidden inner-portfolio stage-close">
+			<div class="hidden inner-portfolio stage-close">
 				<div class="block-relative">
 					<button class="close-portfolio"><i class="fa fa-close"></i></button>
 					<div class="title-block clearfix text-xs-md-center">
@@ -142,7 +142,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="image-links_line clearfix">
+	<div  data-aos="zoom-in" class="aos image-links_line clearfix">
 		<div class="inner-block">
 			<a href="#" class="inner-block_link portfolio-link">
 				<img src="assets/dist/images/demo/slider-1.jpg" alt="ff">
@@ -256,7 +256,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="image-links_line clearfix">
+	<div data-aos="zoom-in" class="aos image-links_line clearfix">
 		<div class="inner-block">
 			<a href="#" class="inner-block_link portfolio-link">
 				<img src="assets/dist/images/demo/slider-1.jpg" alt="ff">
@@ -380,6 +380,13 @@
 @section('page-scripts')
 <script>
 
+	$(document).ready(function(){
+
+		AOS.init({
+			duration: 1000,
+			offset: 200,
+		});
+	});
 
 </script>
 @endsection

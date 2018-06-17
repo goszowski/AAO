@@ -92,7 +92,7 @@
 </main>
 
 
-<footer class="pl-172 pr-172">
+<footer  data-aos="zoom-in" class="aos pl-172 pr-172">
 
 	<div class="footer-top-line clearfix">
 		<div class="inner-block">

@@ -6,7 +6,7 @@
 
 <!--Хедер повинен мати клас black-object-->
 
-<div class="title-block clearfix text-xs-md-center">
+<div data-aos="zoom-in" class="aos title-block clearfix text-xs-md-center">
 	<div class="inner-block pl-172">
 		<p class="title-block_small-title">napis tekst</p>
 		<h2 class="title-block_big-title">Oferta</h2>
@@ -17,7 +17,7 @@
 </div>
 
 
-<div class="title-block clearfix text-xs-md-center reverse-block small-block">
+<div data-aos="zoom-in" class="aos title-block clearfix text-xs-md-center reverse-block small-block">
 	<div class="inner-block pl-172">
 		<h2 class="title-block_big-title fz36">Oferta</h2>
 	</div>
@@ -34,7 +34,7 @@
 </div>
 
 
-<div class="studio-inner-block clearfix pl-172 pr-172">
+<div data-aos="zoom-in" class="aos studio-inner-block clearfix pl-172 pr-172">
 	<img src="assets/dist/images/demo/im4.jpg" alt="d">
 	<div class="studio-inner-block_descr">
 		<h3 class="inner-block_link__big-title fz36">Nazwa Kolejna</h3>
@@ -43,7 +43,7 @@
 	</div>
 </div>
 
-<div class="title-block clearfix text-xs-md-center has-img block-relative img-right">
+<div data-aos="zoom-in" class="aos title-block clearfix text-xs-md-center has-img block-relative img-right">
 	<div class="inner-block pl-172">
 		<div class="oferta-inner-block_descr">
 			<p class="title-block_small-title">napis tekst</p>
@@ -56,7 +56,7 @@
 	</div>
 </div>
 
-<div class="title-block clearfix text-xs-md-center has-img reverse-block img-left block-relative">
+<div data-aos="zoom-in" class="aos title-block clearfix text-xs-md-center has-img reverse-block img-left block-relative">
 	
 	<div class="inner-block pr-172">
 		<div class="oferta-inner-block_descr">
@@ -72,7 +72,7 @@
 	</div>
 </div>
 
-<div class="studio-inner-block bg-reverse clearfix pl-172 pr-172">
+<div data-aos="zoom-in" class="aos studio-inner-block bg-reverse clearfix pl-172 pr-172">
 	<img src="assets/dist/images/demo/im4-reverse.jpg" alt="d">
 	<div class="studio-inner-block_descr">
 		<h3 class="inner-block_link__big-title fz36">Nazwa Kolejna</h3>
@@ -81,7 +81,7 @@
 	</div>
 </div>
 
-<div class="title-block clearfix text-xs-md-center has-img block-relative img-right reverse-block">
+<div data-aos="zoom-in" class="aos title-block clearfix text-xs-md-center has-img block-relative img-right reverse-block">
 	<div class="inner-block pl-172">
 		<div class="oferta-inner-block_descr">
 			<p class="title-block_small-title">napis tekst</p>
@@ -100,7 +100,14 @@
 
 @section('page-scripts')
 <script>
+	
+	$(document).ready(function(){
 
+		AOS.init({
+			duration: 1000,
+			offset: 50,
+		});
+	});
 
 </script>
 @endsection
