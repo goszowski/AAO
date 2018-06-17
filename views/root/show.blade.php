@@ -318,8 +318,8 @@
 			items: 1,
 			loop: true,
 			dots: true,
-			//animateOut: 'slideOutLeft',
-			//animateIn: 'slideInRight',
+			animateOut: 'slideOutLeft',
+			animateIn: 'slideInRight',
 			autoplay: true,
 			autoplayTimeout: homeSliderAutoplayTimeout,
 		});
