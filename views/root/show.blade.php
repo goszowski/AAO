@@ -10,8 +10,8 @@
 		@for($i=1; $i<=4; $i++)
 		<li class="home-slider__item">
 			<span class="home-slider__item__title">
-				<span>Lorem ipsum dolor {{ $i }}</span>
-				Fotografia spałniająca oczekiwania {{ $i }}
+				<span class="home-slider__item__title_little">Lorem ipsum dolor {{ $i }}</span>
+				<span class="home-slider__item__title_detail">Fotografia spałniająca oczekiwania</span>
 			</span>
 			<img src="/assets/dist/images/demo/slider-1.jpg" alt="The title of the slide">
 		</li>
@@ -318,8 +318,8 @@
 			items: 1,
 			loop: true,
 			dots: true,
-			animateOut: 'slideOutLeft',
-			animateIn: 'slideInRight',
+			// animateOut: 'slideOutLeft',
+			// animateIn: 'slideInRight',
 			autoplay: true,
 			autoplayTimeout: homeSliderAutoplayTimeout,
 		});
@@ -330,14 +330,20 @@
 		});
 
 		
-		homeSlider.on('changed.owl.carousel', function(event) {
-			var element = event.target;
+		// homeSlider.on('changed.owl.carousel', function(event) {
+			
+		// 	var changeSpeed = 50;
+
+		// 	setTimeout(function() {
+		// 		var element = $('.home-slider .owl-item.active');
+		// 		$(element).find('.home-slider__item__title').addClass('active');
+		// 	}, changeSpeed);
 	
-			$(element).find('.home-slider__item__title').removeClass('animation-end').addClass('animation-start');
-			setTimeout(function(){
-				$(element).find('.home-slider__item__title').removeClass('animation-start').addClass('animation-end');
-			},5000);
-		});
+			
+		// 	setTimeout(function(){
+		// 		$(element).find('.home-slider__item__title').removeClass('animation-start').addClass('animation-end');
+		// 	},homeSliderAutoplayTimeout);
+		// });
 		
 		
 	});
