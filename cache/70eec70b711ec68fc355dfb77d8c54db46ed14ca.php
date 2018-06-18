@@ -320,6 +320,9 @@
 			// animateIn: 'slideInRight',
 			autoplay: true,
 			autoplayTimeout: homeSliderAutoplayTimeout,
+			autoplaySpeed: 800,
+			navSpeed: 800,
+			dotsSpeed: 800,
 		});
 
 		homeSlider.on('change.owl.carousel', function(event) {
