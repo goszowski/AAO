@@ -37,6 +37,7 @@
 			transform: translate(0, -50%);
 			opacity: 0;
 			transition: top 1s, opacity 1s;
+			transition-delay: .4s;
 
 			@media(max-width: 992px){
 				left: 30px;
@@ -58,7 +59,7 @@
 				line-height: 45px;
 				opacity: 0;
 				transition: top .8s, opacity .8s;
-				transition-delay: .1s;
+				transition-delay: .5s;
 
 				@media(max-width: 992px){ 
 					font-size: 2vw;
