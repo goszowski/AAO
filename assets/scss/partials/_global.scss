@@ -316,7 +316,7 @@ a {
 }
 
 .bottom-link {
-	transition: all 1s;
+	transition: all 0.3s;
 	display: inline-block;
 	&:before {
 		content: '';
@@ -345,10 +345,10 @@ a {
 .link-hover {
 	padding-left: 60px;
 	&:after {
-		animation: fadeOutLeft 1s;
+		animation: fadeOutLeft 0.4s;
 	}
 	&:before {
-		animation: fadeInLeft 1s;
+		animation: fadeInLeft 0.4s;
 		-webkit-animation-fill-mode: forwards;
 	}
 }
@@ -1561,10 +1561,10 @@ input.chk-btn:checked + label {
 }
 
 
-.owl-carousel .owl-item {
-	-webkit-animation-duration: 2s !important;
-	animation-duration: 2s !important;
-}
+//.owl-carousel .owl-item {
+//	-webkit-animation-duration: 2s !important;
+//	animation-duration: 2s !important;
+//}
 
 
 .pace-done {
@@ -1586,7 +1586,7 @@ input.chk-btn:checked + label {
 .hover-green {
 	display: block;
 	.title-block_small-title, .title-block_big-title, .has-icon-btn {
-		transition: color 0.5s;
+		transition: color 0.3s;
 	}
 	.has-icon-btn {
 		position: relative;
@@ -1597,7 +1597,7 @@ input.chk-btn:checked + label {
 			height: 15px;
 			opacity: 1;
 			background: url(../images/arrow_b.svg) no-repeat right center;
-			transition: width 0.5s
+			transition: width 0.3s;
 		}
 		&:hover::after {
 			width: 70px;

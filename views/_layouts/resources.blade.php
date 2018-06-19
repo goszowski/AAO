@@ -99,7 +99,7 @@
 	$(document).ready(function(){
 
 		setTimeout(function(){
-			$('body').removeClass();
+			$('body').removeClass('pace-running');
 		}, 3000);
 
 		$('#up').click(function() {

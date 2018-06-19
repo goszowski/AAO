@@ -7,7 +7,7 @@
 
 	background: #fff;
 	z-index: 2;
-	transition: width .7s ease-in, right .7s ease-in;
+	transition: width .7s ease, right .7s ease;
 	overflow-x: hidden;
 
 	.navigation-inner {
@@ -16,7 +16,7 @@
 		top: 0px;
 		width: 100vw;
 		height: 100vh;
-		transition: rightt .7s ease-in;
+		transition: right .7s ease;
 	}
 
 	&.open {
@@ -310,6 +310,6 @@ main {
 		overflow: hidden;
 		backface-visibility: hidden;
 		transform: translateX(-100%);
-		transition: transform .8s ease-in;
+		transition: transform .8s ease;
 	}
 }

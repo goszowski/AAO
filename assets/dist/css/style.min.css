@@ -536,9 +536,9 @@ a {
               margin-left: 10px; } }
 
 .bottom-link {
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
   display: inline-block; }
   .bottom-link:before {
     content: '';
@@ -564,11 +564,11 @@ a {
 .link-hover {
   padding-left: 60px; }
   .link-hover:after {
-    -webkit-animation: fadeOutLeft 1s;
-            animation: fadeOutLeft 1s; }
+    -webkit-animation: fadeOutLeft 0.4s;
+            animation: fadeOutLeft 0.4s; }
   .link-hover:before {
-    -webkit-animation: fadeInLeft 1s;
-            animation: fadeInLeft 1s;
+    -webkit-animation: fadeInLeft 0.4s;
+            animation: fadeInLeft 0.4s;
     -webkit-animation-fill-mode: forwards; }
 
 @-webkit-keyframes fadeOutLeft {
@@ -1527,10 +1527,6 @@ input.chk-btn:checked + label {
     -o-transition: all 1.85s ease;
     transition: all 1.85s ease; }
 
-.owl-carousel .owl-item {
-  -webkit-animation-duration: 2s !important;
-  animation-duration: 2s !important; }
-
 .pace-done:before {
   opacity: 0.8;
   left: 50%;
@@ -1548,9 +1544,9 @@ input.chk-btn:checked + label {
   -o-transition-property: all !important;
   transition-property: all !important; }
   .hover-green .title-block_small-title, .hover-green .title-block_big-title, .hover-green .has-icon-btn {
-    -webkit-transition: color 0.5s;
-    -o-transition: color 0.5s;
-    transition: color 0.5s; }
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s; }
   .hover-green .has-icon-btn {
     position: relative; }
     .hover-green .has-icon-btn:after {
@@ -1560,9 +1556,9 @@ input.chk-btn:checked + label {
       height: 15px;
       opacity: 1;
       background: url(../images/arrow_b.svg) no-repeat right center;
-      -webkit-transition: width 0.5s;
-      -o-transition: width 0.5s;
-      transition: width 0.5s; }
+      -webkit-transition: width 0.3s;
+      -o-transition: width 0.3s;
+      transition: width 0.3s; }
     .hover-green .has-icon-btn:hover::after {
       width: 70px; }
   .hover-green:hover {
@@ -1841,9 +1837,9 @@ header.scrolled {
   width: 100vw;
   background: #fff;
   z-index: 2;
-  -webkit-transition: width .7s ease-in, right .7s ease-in;
-  -o-transition: width .7s ease-in, right .7s ease-in;
-  transition: width .7s ease-in, right .7s ease-in;
+  -webkit-transition: width .7s ease, right .7s ease;
+  -o-transition: width .7s ease, right .7s ease;
+  transition: width .7s ease, right .7s ease;
   overflow-x: hidden; }
   #navigation .navigation-inner {
     position: absolute;
@@ -1851,9 +1847,9 @@ header.scrolled {
     top: 0px;
     width: 100vw;
     height: 100vh;
-    -webkit-transition: rightt .7s ease-in;
-    -o-transition: rightt .7s ease-in;
-    transition: rightt .7s ease-in; }
+    -webkit-transition: right .7s ease;
+    -o-transition: right .7s ease;
+    transition: right .7s ease; }
   #navigation.open {
     right: 0vw; }
     #navigation.open .navigation-inner {
@@ -2081,8 +2077,8 @@ main {
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
-  -webkit-transition: -webkit-transform .8s ease-in;
-  transition: -webkit-transform .8s ease-in;
-  -o-transition: transform .8s ease-in;
-  transition: transform .8s ease-in;
-  transition: transform .8s ease-in, -webkit-transform .8s ease-in; }
+  -webkit-transition: -webkit-transform .8s ease;
+  transition: -webkit-transform .8s ease;
+  -o-transition: transform .8s ease;
+  transition: transform .8s ease;
+  transition: transform .8s ease, -webkit-transform .8s ease; }

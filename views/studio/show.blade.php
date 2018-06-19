@@ -106,8 +106,8 @@
 	$(document).ready(function(){
 
 		AOS.init({
-			duration: 1000,
-			offset: 100,
+			duration: 600,
+			offset: 10,
 		});
 	});
 
