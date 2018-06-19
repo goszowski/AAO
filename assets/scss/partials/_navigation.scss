@@ -48,9 +48,20 @@
 					font-weight: bold;
 					color: rgba(0,0,0, .5);
 					text-decoration: none;
-					transition: color 200ms;
+					transition: all 300ms;
 					padding-right: 70px;
-					
+
+					&:before {
+						content: '';
+						position: absolute;
+						left: -60px;
+						top: 16px;
+						opacity: 0;
+						display: inline-block;
+						width: 60px;
+						height: 23px;
+						background: url(../images/arrow_b.svg) no-repeat right center;
+					}
 
 					&:after {
 						content: '';
@@ -64,10 +75,6 @@
 
 					&:hover, &.active {
 						color: rgba(0,0,0, 1);
-
-						&:after {
-							opacity: 1;
-						}
 					}
 				}
 			}

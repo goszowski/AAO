@@ -26,6 +26,18 @@
 
 	<script>
 	
+
+		$(document).ready(function(){
+
+			$('.main-nav a').hover(function(event){
+			//$('.bottom-link').removeClass('after-hidden before-opacity');
+			var link = event.target;
+			$(this).addClass('link-hover');
+			}, function(){
+				$(this).removeClass('link-hover');
+			});
+
+		});
 		
 
 	var color = 0; //white-objects
