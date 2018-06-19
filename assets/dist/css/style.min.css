@@ -1891,16 +1891,19 @@ header.scrolled {
             display: inline-block;
             width: 60px;
             height: 23px;
-            background: url(../images/arrow_b.svg) no-repeat right center; }
+            background: url(../images/arrow_b.svg) no-repeat right center;
+            -webkit-transition: width 300ms;
+            -o-transition: width 300ms;
+            transition: width 300ms; }
           #navigation .main-nav ul li a:after {
             content: '';
             display: inline-block;
             width: 60px;
             height: 30px;
             opacity: 0;
-            -webkit-transition: opacity 200ms;
-            -o-transition: opacity 200ms;
-            transition: opacity 200ms;
+            -webkit-transition: opacity 300ms;
+            -o-transition: opacity 300ms;
+            transition: opacity 300ms;
             background: url(../images/arrow_b.svg) no-repeat right center; }
           #navigation .main-nav ul li a:hover, #navigation .main-nav ul li a.active {
             color: black; }
