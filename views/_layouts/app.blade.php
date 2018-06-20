@@ -37,10 +37,10 @@
 						<a class="active" href="/portfolio">Portfolio</a>
 					</li>
 					<li>
-						<a href="/portfolio">Oferta</a>
+						<a href="/oferta">Oferta</a>
 					</li>
 					<li>
-						<a href="/portfolio">Studio</a>
+						<a href="/studio">Studio</a>
 					</li>
 					<li>
 						<a href="/portfolio">Aktualności</a>
@@ -94,7 +94,7 @@
 </main>
 {{-- Footer --}}
 
-<footer  data-aos="zoom-in" class="aos pl-172 pr-172">
+<footer  data-aos="fade" class="aos pl-172 pr-172">
 
 	<div class="footer-top-line clearfix">
 		<div class="inner-block">

@@ -5,7 +5,7 @@
 @section('content')
 
 
-<div data-aos="zoom-in" class="aos title-block clearfix text-xs-md-center">
+<div data-aos="fade" class="aos title-block clearfix text-xs-md-center">
 	<div class="inner-block pl-172">
 		<p class="title-block_small-title">NAPIS TEKST</p>
 		<h2 class="title-block_big-title">Studio</h2>
@@ -16,7 +16,7 @@
 </div>
 
 
-<div data-aos="zoom-in" class="aos studio-inner-block clearfix pl-172 pr-172">
+<div data-aos="fade" class="aos studio-inner-block clearfix pl-172 pr-172">
 	<img src="assets/dist/images/demo/im4.jpg" alt="d">
 		<div class="studio-inner-block_descr">
 			<h3 class="inner-block_link__big-title fz36">Nazwa Kolejna</h3>
@@ -26,7 +26,7 @@
 </div>
 
 
-<div data-aos="zoom-in" class="aos studio-text">
+<div data-aos="fade" class="aos studio-text">
 	<h3>Opis 1</h3>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. laboris nisi ut aliquip ex ea commodo consequat.</p>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -41,7 +41,7 @@
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
-<div  data-aos="zoom-in" class="aos partners-block">
+<div  data-aos="fade" class="aos partners-block">
 	<div class="text-center">
 		<p class="title-block_small-title">Nasza kompleksowa oferta</p>
 		<h2 class="title-block_big-title">Zaufali nam</h2>
@@ -106,7 +106,7 @@
 	$(document).ready(function(){
 
 		AOS.init({
-			duration: 600,
+			duration: 1000,
 			offset: 10,
 		});
 	});

@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div data-aos="zoom-in" class="aos title-block title-block_portfolio clearfix text-xs-md-center">
+<div data-aos="fade" class="aos title-block title-block_portfolio clearfix text-xs-md-center">
 	<div class="inner-block pl-172">
 		<p class="title-block_small-title">Kategoria 1</p>
 		<h2 class="title-block_big-title">Wypełnij Brief</h2>
@@ -151,7 +151,7 @@
 	$(document).ready(function(){
 
 		AOS.init({
-			duration: 600,
+			duration: 1000,
 			offset: 10,
 		});
 	});

@@ -6,6 +6,7 @@
 
 <div class="portfolio-inner-head">
 	<img src="/assets/dist/images/demo/slider-1.jpg" alt="head">
+	<a href="/portfolio" class="back-to-portfolio has-icon-btn text-uppercase">powrot</a>
 </div>
 
 <div class="title-block clearfix text-xs-md-center">
@@ -60,6 +61,15 @@
 
 @section('page-scripts')
 <script>
+
+	$(document).ready(function(){
+
+		AOS.init({
+			duration: 1000,
+			offset: 10,
+		});
+
+	});
 
 
 </script>

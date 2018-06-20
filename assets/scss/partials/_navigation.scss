@@ -51,6 +51,7 @@
 					transition: all 300ms;
 					padding-right: 70px;
 
+
 					&:before {
 						content: '';
 						position: absolute;
@@ -62,6 +63,9 @@
 						height: 23px;
 						background: url(../images/arrow_b.svg) no-repeat right center;
 						transition: width 300ms;
+						@media (max-width: 540px) {
+							top: 3px;
+						}
 					}
 
 					&:after {
