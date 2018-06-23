@@ -47,7 +47,7 @@
 	<div class="inner-block pl-172">
 		<div class="oferta-inner-block_descr">
 			<p class="title-block_small-title">napis tekst</p>
-			<h2 class="title-block_big-title">Oferta</h2>
+			<h2 class="title-block_big-title fz36">Oferta</h2>
 			<p class="title-block_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. laboris nisi ut aliquip ex ea commodo consequat. </p>
 		</div>
 	</div>
@@ -61,7 +61,7 @@
 	<div class="inner-block pr-172">
 		<div class="oferta-inner-block_descr">
 			<p class="title-block_small-title">napis tekst</p>
-			<h2 class="title-block_big-title">Oferta</h2>
+			<h2 class="title-block_big-title fz36">Oferta</h2>
 			<p class="title-block_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. laboris nisi ut aliquip ex ea commodo consequat. </p>
 			<p class="title-block_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. laboris nisi ut aliquip ex ea commodo consequat. </p>
 		</div>
@@ -85,7 +85,7 @@
 	<div class="inner-block pl-172">
 		<div class="oferta-inner-block_descr">
 			<p class="title-block_small-title">napis tekst</p>
-			<h2 class="title-block_big-title">Oferta</h2>
+			<h2 class="title-block_big-title fz36">Oferta</h2>
 			<p class="title-block_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. laboris nisi ut aliquip ex ea commodo consequat. </p>
 		</div>
 	</div>

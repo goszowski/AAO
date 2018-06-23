@@ -15,6 +15,24 @@
 	</div>
 </div>
 
+<div class="p-nav-container">
+	<div class="header">
+			<input class="nav-burger__checkbox hidden-md" type="checkbox" id="burger">
+			<label class="nav-burger hidden-md" for="burger">Меню</label>
+		<nav class="p-nav portfolio-nav">
+			<ul>
+				<li class="active"><a href="#" class="nav__item">Kategoria 1</a></li>
+				<li><a href="#" class="nav__item">Kategoria 2</a></li>
+				<li><a href="#" class="nav__item">Kategoria 3</a></li>
+				<li><a href="#" class="nav__item">Kategoria 4</a></li>
+				<li><a href="#" class="nav__item">Kategoria 5</a></li>
+				<li><a href="#" class="nav__item">Kategoria 6</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<!--
 <div data-aos="fade" data-aos-offset="50" class="aos portfolio-nav pl-172 pr-172">
 	<ul>
 		<li class="active"><a href="#">Kategoria 1</a></li>
@@ -25,7 +43,7 @@
 		<li><a href="#">Kategoria 6</a></li>
 	</ul>
 </div>
-
+-->
 <div  data-aos="fade"  data-aos-offset="50" class="aos image-links">
 	<div class="image-links_line clearfix">
 		<div class="inner-block">
