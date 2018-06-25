@@ -23,10 +23,22 @@
 	<script src="/assets/vendor/aos/dist/aos.js"></script>
 	<script src="/assets/vendor/pace/pace.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="/assets/vendor/typed.js"></script>
 
 	<script>
 
 	$(document).ready(function(){
+
+		if ($('.element').length) {
+			$('.element').each(function () {
+				$(this).typed({
+					strings: [$(this).data('text1'), $(this).data('text2')],
+					loop: $(this).data('loop') ? $(this).data('loop') : false ,
+					backDelay: $(this).data('backdelay') ? $(this).data('backdelay') : 2000 ,                
+					typeSpeed: 10,
+				});
+			});
+		}
 
 		$('.main-nav a').hover(function(event){
 		//$('.bottom-link').removeClass('after-hidden before-opacity');

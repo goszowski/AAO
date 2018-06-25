@@ -28,7 +28,7 @@
 <div data-aos="fade" data-aos-duration="2000" class="aos title-block clearfix text-xs-md-center">
 	<div class="inner-block pl-172">
 		<p class="title-block_small-title">Foto STUDIO</p>
-			<h2 class="title-block_big-title">Kreacja</h2>
+			<h2 class="title-block_big-title">Jest <span class="element" data-text1="Pasja" data-text2="Kreacja" data-loop="true" data-backdelay="3000">Pasja</span><span class="typed-cursor"></span></h2>
 	</div>
 	<div class="inner-block pr-172">
 		<p class="title-block_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quod facere laboriosam! Porro, fugiat! Aspernatur maxime recusandae neque deserunt quaerat eum animi est, quia enim! Consequuntur quasi ad nam voluptate.</p>
