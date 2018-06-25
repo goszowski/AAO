@@ -1,5 +1,5 @@
 vendor
-!vendor/pace
+!assets/vendor
 cache
 assets/node_modules
 assets/package-lock.json
