@@ -2,19 +2,6 @@
 
 @section('app')
 
-<!--
-<div id="preloader" class="preloader">
-	<div class="loader">
-		<div class="loader-logo"></div>
-		<div class="loader-line">
-			<div class="loader-default"></div>
-			<div class="loader-progress"></div>
-		</div>
-	</div>
-</div>
-
--->
-
 <header class="@yield('header-class', 'black-objects')">
 	<a href="/" class="logo">
 		<span class="logo-default-state"></span>
@@ -88,12 +75,11 @@
 	</div>
 </header>
 
-{{-- Page content --}}
 <main>
 	@yield('content')
 </main>
-{{-- Footer --}}
 
+{{-- Footer --}}
 <footer  data-aos="fade" class="aos pl-172 pr-172">
 
 	<div class="footer-top-line clearfix">

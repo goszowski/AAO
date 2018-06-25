@@ -1,7 +1,5 @@
 @extends('_layouts.app')
 
-@section('header-class', 'black-objects')
-
 @section('content')
 
 <div data-aos="fade" class="aos title-block title-block_portfolio clearfix text-xs-md-center">

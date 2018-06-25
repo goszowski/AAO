@@ -6,7 +6,7 @@
 
 <div class="portfolio-inner-head">
 	<img src="/assets/dist/images/demo/slider-1.jpg" alt="head">
-	<a href="/portfolio" class="back-to-portfolio has-icon-btn text-uppercase">powrot</a>
+	<a href="/portfolio" class="back-to-portfolio has-icon-btn text-uppercase">powrót</a>
 </div>
 
 <div class="title-block clearfix text-xs-md-center">

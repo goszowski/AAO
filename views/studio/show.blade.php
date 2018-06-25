@@ -1,7 +1,5 @@
 @extends('_layouts.app')
 
-@section('header-class', 'black-objects')
-
 @section('content')
 
 

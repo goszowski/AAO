@@ -1,18 +1,5 @@
 <?php $__env->startSection('app'); ?>
 
-<!--
-<div id="preloader" class="preloader">
-	<div class="loader">
-		<div class="loader-logo"></div>
-		<div class="loader-line">
-			<div class="loader-default"></div>
-			<div class="loader-progress"></div>
-		</div>
-	</div>
-</div>
-
--->
-
 <header class="<?php echo $__env->yieldContent('header-class', 'black-objects'); ?>">
 	<a href="/" class="logo">
 		<span class="logo-default-state"></span>
@@ -85,7 +72,6 @@
 		</div>
 	</div>
 </header>
-
 
 <main>
 	<?php echo $__env->yieldContent('content'); ?>

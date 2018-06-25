@@ -21,24 +21,22 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="/assets/vendor/aos/dist/aos.js"></script>
-	<script src="/assets/vendor/pace/pace.js"></script>
+	<script src="/assets/vendor/pace/pace.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 	<script>
-	
 
-		$(document).ready(function(){
+	$(document).ready(function(){
 
-			$('.main-nav a').hover(function(event){
-			//$('.bottom-link').removeClass('after-hidden before-opacity');
-			var link = event.target;
-			$(this).addClass('link-hover');
-			}, function(){
-				$(this).removeClass('link-hover');
-			});
-
+		$('.main-nav a').hover(function(event){
+		//$('.bottom-link').removeClass('after-hidden before-opacity');
+		var link = event.target;
+		$(this).addClass('link-hover');
+		}, function(){
+			$(this).removeClass('link-hover');
 		});
-		
+
+	});
 
 	var color = 0; //white-objects
 
@@ -121,49 +119,38 @@
 
 		var header = $("header"); // Меню
 		var	header_h = header.height() + 22;
-		var scrollPrev = 0 // Предыдущее значение скролла
+		var scrollPrev = 0;
 	
 		$(window).scroll(function() {
-			var scrolled = $(window).scrollTop(); // Высота скролла в px
-			var firstScrollUp = false; // Параметр начала сколла вверх
-			var firstScrollDown = false; // Параметр начала сколла вниз
-			
-			// Если скроллим
+			var scrolled = $(window).scrollTop();
+			var firstScrollUp = false;
+			var firstScrollDown = false;
+
 			if ( scrolled > 0 ) {
-				// Если текущее значение скролла > предыдущего, т.е. скроллим вниз
 				if ( scrolled > scrollPrev ) {
-					firstScrollUp = false; // Обнуляем параметр начала скролла вверх
-					// Если меню видно
+					firstScrollUp = false;
 					if ( scrolled < header.height() + header.offset().top ) {
-						// Если только начали скроллить вниз
 						if ( firstScrollDown === false ) {
-							var topPosition = header.offset().top; // Фиксируем текущую позицию меню
+							var topPosition = header.offset().top;
 							header.css({
 								"top": topPosition + "px"
 							});
 							firstScrollDown = true;
 						}
-						// Позиционируем меню абсолютно
 						header.css({
 							"position": "absolute"
 						});
-					// Если меню НЕ видно
 				} else {
-						// Позиционируем меню фиксированно вне экрана
 						header.css({
 							"position": "fixed",
 							"top": "-" + header_h + "px"
 						});
 					}
-					
-				// Если текущее значение скролла < предыдущего, т.е. скроллим вверх
 			} else {
-					firstScrollDown = false; // Обнуляем параметр начала скролла вниз
-					// Если меню не видно
+					firstScrollDown = false;
 					if ( scrolled > header.offset().top ) {
-						// Если только начали скроллить вверх
 						if ( firstScrollUp === false ) {
-							var topPosition = header.offset().top; // Фиксируем текущую позицию меню
+							var topPosition = header.offset().top;
 							header.css({
 								"top": topPosition + "px"
 							});
@@ -175,19 +162,16 @@
 							}
 							firstScrollUp = true;
 						}
-						// Позиционируем меню абсолютно
 						header.css({
 							"position": "absolute"
 						});
 					} else {
-						// Убираем все стили
 						header.removeAttr("style");
 						header.css({
 							"background-color": "#fff"
 						});
 					}
 				}
-				// Присваеваем текущее значение скролла предыдущему
 				scrollPrev = scrolled;
 			}
 			if(scrolled == 0) {
@@ -202,25 +186,6 @@
 			}
 		});
 	});
-/*
-	$('.portfolio-link').on('click', function(event){
-			//event.preventDefault();
-
-			$(this).addClass('portfolio-open');
-			$('body').addClass('all-white');
-			$('.aos').removeAttr('data-aos');
-			$(this).parent().find('.inner-portfolio').removeClass('hidden').addClass('stage-open');
-			$(this).parent().find('.close-portfolio').delay(500).fadeIn();
-
-		});
-
-	$('.close-portfolio').on('click', function(){
-		$('body').removeClass('all-white');
-		$('.portfolio-link').removeClass('portfolio-open');
-		$('.inner-portfolio').removeClass('stage-open').addClass('hidden');
-		$('.aos').attr('data-aos','zoom-in');
-	});
-*/
 	</script>
 
 	@yield('page-scripts')

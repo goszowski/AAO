@@ -1,10 +1,6 @@
 @extends('_layouts.app')
 
-@section('header-class', 'black-objects')
-
 @section('content')
-
-<!--Хедер повинен мати клас black-object-->
 
 <div data-aos="fade" class="aos title-block clearfix text-xs-md-center">
 	<div class="inner-block pl-172">
