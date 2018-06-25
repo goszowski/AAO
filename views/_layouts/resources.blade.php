@@ -21,7 +21,7 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="/assets/vendor/aos/dist/aos.js"></script>
-	<script src="/assets/vendor/pace/pace.min.js"></script>
+	<script src="/assets/vendor/pace/pace.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 	<script src="/assets/vendor/typed.js"></script>
 
