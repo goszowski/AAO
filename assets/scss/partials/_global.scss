@@ -829,13 +829,19 @@ footer {
 	}
 	
 	.portfolio-nav-left {
+		.pos-relative {
+			&:before{
+				top: calc(50% - 20px);
+			}
+		}
 		.inner-block_link__descr {
+			padding-right: 100px;
 			left: 150px;
 			right: auto;
 
 			@media(max-width: 550px) {
 				left: 100px;
-				padding-right: 10px;
+				padding-right: 20px;
 			}
 
 			@media(max-width: 992px) {
@@ -871,6 +877,7 @@ footer {
 			}
 		}
 		.inner-block_link__descr {
+			padding-left: 100px;
 			right: 150px;
 			left: auto;
 
@@ -880,7 +887,7 @@ footer {
 
 			@media(max-width: 550px) {
 				right: 100px;
-				padding-left: 10px;
+				padding-left: 20px;
 			}
 		}
 	}
@@ -907,12 +914,14 @@ footer {
 		display: inline-block;
 		width: 60px;
 		height: 30px;
-		top: 20px;
+		top: calc(50%);
+		transform: translate(0,-50%);
 		background: url(../images/arrow_w.svg) no-repeat right center;
 	}
 }
 
 .portfolio-nav-left {
+	text-align: right;
 	.pos-relative:before {
 		left: -75px;
 		transform: rotate(180deg);
