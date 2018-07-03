@@ -1561,9 +1561,9 @@ input.chk-btn:checked + label {
     content: '';
     position: absolute;
     left: 0;
-    right: 0;
     top: 0;
-    bottom: 0;
+    height: 100vh;
+    width: 100%;
     background-color: #fff;
     z-index: 10000;
     opacity: 1;
@@ -1590,9 +1590,9 @@ input.chk-btn:checked + label {
     transition: all 1.85s ease; }
 
 .pace-done:before {
-  opacity: 0.8;
-  left: 50%;
-  right: 50%;
+  opacity: 1;
+  top: 50vh;
+  height: 0;
   z-index: -10; }
 
 .pace-done:after {
