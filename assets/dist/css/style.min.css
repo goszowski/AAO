@@ -918,6 +918,9 @@ footer {
     margin-left: auto;
     margin-right: auto; }
 
+.portfolio-link .inner-block_link__descr {
+  padding-right: 50px; }
+
 .portfolio-inner_nav .inner-block_link__descr {
   top: 50%;
   -webkit-transform: translate(0, -50%);
