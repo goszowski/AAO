@@ -1070,6 +1070,7 @@ footer {
 
 .bg-reverse .studio-inner-block_descr {
   padding-left: 172px;
+  padding-right: 0;
   position: absolute;
   right: 50%;
   left: auto; }
@@ -1151,7 +1152,7 @@ footer {
   margin: 10px 0;
   position: relative;
   display: block;
-  height: 100px;
+  height: 120px;
   overflow: hidden;
   padding: 0 10px; }
   @media (max-width: 768px) {
@@ -1174,7 +1175,12 @@ footer {
             transform: translate(-50%, -50%);
     -webkit-transition: all 0.95s;
     -o-transition: all 0.95s;
-    transition: all 0.95s; }
+    transition: all 0.95s;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%); }
 
 .partners-wrapp {
   margin-top: 70px;
@@ -1559,10 +1565,11 @@ input.chk-btn:checked + label {
   position: relative; }
   .pace-running:before {
     content: '';
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
-    height: 100vh;
+    bottom: 0;
+    right: 0;
     width: 100%;
     background-color: #fff;
     z-index: 10000;
@@ -1591,8 +1598,8 @@ input.chk-btn:checked + label {
 
 .pace-done:before {
   opacity: 1;
-  top: 46vh;
-  height: 0;
+  top: 50%;
+  bottom: 50%;
   z-index: -10; }
 
 .pace-done:after {
@@ -1731,6 +1738,9 @@ input.chk-btn:checked + label {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+.fz60 {
+  font-size: 60px; }
 
 header {
   position: fixed;

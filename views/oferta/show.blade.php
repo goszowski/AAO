@@ -33,7 +33,7 @@
 <div data-aos="fade" class="aos studio-inner-block clearfix pl-172 pr-172">
 	<img src="assets/dist/images/demo/im4.jpg" alt="d">
 	<div class="studio-inner-block_descr">
-		<h3 class="inner-block_link__big-title fz36">Nazwa Kolejna</h3>
+		<h3 class="inner-block_link__big-title fz36 fz60">Nazwa Kolejna</h3>
 		<p class="inner-block_link__small-title">PODPIS</p>
 		<p class="title-block_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. laboris nisi ut aliquip ex ea commodo consequat. </p>
 	</div>
@@ -71,7 +71,7 @@
 <div data-aos="fade" class="aos studio-inner-block bg-reverse clearfix pl-172 pr-172">
 	<img src="assets/dist/images/demo/im4-reverse.jpg" alt="d">
 	<div class="studio-inner-block_descr">
-		<h3 class="inner-block_link__big-title fz36">Nazwa Kolejna</h3>
+		<h3 class="inner-block_link__big-title fz36 fz60">Nazwa Kolejna</h3>
 		<p class="inner-block_link__small-title">PODPIS</p>
 		<p class="title-block_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. laboris nisi ut aliquip ex ea commodo consequat. </p>
 	</div>

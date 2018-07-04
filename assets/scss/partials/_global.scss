@@ -1013,6 +1013,7 @@ footer {
 .bg-reverse {
 	.studio-inner-block_descr {
 		padding-left: 172px;
+		padding-right: 0;
 		position: absolute;
 		right: 50%;
 		left: auto;
@@ -1117,7 +1118,7 @@ footer {
 	margin: 10px 0;
 	position: relative;
 	display: block;
-	height: 100px;
+	height: 120px;
 	overflow: hidden;
 	padding: 0 10px;
 
@@ -1142,6 +1143,9 @@ footer {
 		left: 50%;
 		transform: translate(-50%,-50%);
 		transition: all 0.95s;
+		height: 100%;
+		object-fit: contain;
+		filter: grayscale(100%); 
 	}
 
 }
@@ -1606,9 +1610,9 @@ input.chk-btn:checked + label {
 	position: relative;
 	&:before {
 		content: '';
-		position: absolute;
-		left: 0;  top: 0;
-		height: 100vh;
+		position: fixed;
+		left: 0;  top: 0; bottom: 0; right: 0;
+	//	height: 100vh;
 		width: 100%;
 		background-color: #fff;
 		z-index: 10000;
@@ -1642,8 +1646,8 @@ input.chk-btn:checked + label {
 .pace-done {
 	&:before {
 		opacity: 1;
-		top: 46vh;
-		height: 0;
+		top: 50%;
+		bottom: 50%;
 		z-index: -10;
 	}
 	&:after {
@@ -1894,4 +1898,9 @@ input.chk-btn:checked + label {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+
+.fz60 {
+	font-size: 60px;
 }
