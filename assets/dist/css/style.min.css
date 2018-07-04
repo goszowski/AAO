@@ -1403,7 +1403,7 @@ input.chk-btn:checked + label {
   display: inline-block; }
 
 .contact-btn {
-  border: none;
+  border: 1px solid transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
   display: block;
