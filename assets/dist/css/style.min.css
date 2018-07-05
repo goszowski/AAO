@@ -1574,9 +1574,9 @@ input.chk-btn:checked + label {
     background-color: #fff;
     z-index: 10000;
     opacity: 1;
-    -webkit-transition: all 1.85s ease;
-    -o-transition: all 1.85s ease;
-    transition: all 1.85s ease; }
+    -webkit-transition: all 1.55s ease;
+    -o-transition: all 1.55s ease;
+    transition: all 1.55s ease; }
   .pace-running:after {
     content: '';
     position: fixed;
@@ -1592,9 +1592,9 @@ input.chk-btn:checked + label {
     width: 110px;
     z-index: 10000;
     opacity: 1;
-    -webkit-transition: all 1.85s ease;
-    -o-transition: all 1.85s ease;
-    transition: all 1.85s ease; }
+    -webkit-transition: all 1.55s ease;
+    -o-transition: all 1.55s ease;
+    transition: all 1.55s ease; }
 
 .pace-done:before {
   opacity: 1;
