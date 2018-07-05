@@ -1743,6 +1743,12 @@ input.chk-btn:checked + label {
 
 .fz60 {
   font-size: 60px; }
+  @media (max-width: 992px) {
+    .fz60 {
+      font-size: 46px; } }
+  @media (max-width: 768px) {
+    .fz60 {
+      font-size: 36px; } }
 
 header {
   position: fixed;
