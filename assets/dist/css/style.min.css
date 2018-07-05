@@ -1603,8 +1603,7 @@ input.chk-btn:checked + label {
   z-index: -10; }
 
 .pace-done:after {
-  opacity: 1;
-  height: 0;
+  opacity: 0;
   top: 50%;
   z-index: -10;
   right: auto; }
