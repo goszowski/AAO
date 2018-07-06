@@ -1753,6 +1753,26 @@ input.chk-btn:checked + label {
 // }
 
 
+.active-category {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	font-size: 18px;
+	color: #fff;
+	line-height: 55px;
+	font-weight: 700;
+	text-transform: uppercase;
+	//width: 100%;
+	display: block;
+	right: 65px;
+	background-color: rgba(255,255,255,0.1);
+	padding-left: 25px;
+	overflow: hidden;
+	z-index: 5;
+}
+
+
 @media(max-width: 1190px){
 
 

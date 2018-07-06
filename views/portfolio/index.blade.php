@@ -15,6 +15,7 @@
 
 <div class="p-nav-container">
 	<div class="header">
+			<div class="active-category"></div>
 			<input class="nav-burger__checkbox hidden-md" type="checkbox" id="burger">
 			<label class="nav-burger hidden-md" for="burger">Меню</label>
 		<nav class="p-nav portfolio-nav">
@@ -119,6 +120,20 @@
 			duration: 1000,
 			offset: 10,
 		});
+
+		$(function(){
+			$load_link = $('.p-nav-container').find('.active a');
+			$load_value = $load_link[0].innerText;
+			$('.active-category').text($load_value);
+		});
+
+			$('.nav__item').on('click',function(){
+				//console.log($(this)[0].innerText);
+				$text = $(this)[0].innerText;
+				$('.active-category').text($text);
+			});
+
+
 	});
 
 </script>
