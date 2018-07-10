@@ -391,7 +391,8 @@ a {
 
 .inner-block {
   width: 50%;
-  float: left; }
+  float: left;
+  line-height: 1; }
   @media (max-width: 1190px) {
     .inner-block {
       float: none;
@@ -1258,7 +1259,6 @@ footer {
     .oferta-list {
       margin-top: 30px; } }
   .oferta-list li {
-    list-style-type: none;
     color: #fff;
     line-height: 36px; }
     .oferta-list li a {
