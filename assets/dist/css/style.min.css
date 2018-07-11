@@ -1267,6 +1267,35 @@ footer {
       .oferta-list li a:hover {
         text-decoration: underline !important; }
 
+.squared-li ul {
+  padding: 0;
+  margin: 0; }
+  .squared-li ul li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+    color: #000;
+    line-height: 36px; }
+    .squared-li ul li:before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      display: block;
+      width: 5px;
+      height: 5px;
+      background-color: #000; }
+
+.squared-li-white ul li {
+  color: #fff; }
+  .squared-li-white ul li a {
+    color: #fff; }
+  .squared-li-white ul li:before {
+    background-color: #fff; }
+
 /*---------brief------------*/
 .contact-form {
   padding-left: 40px;
